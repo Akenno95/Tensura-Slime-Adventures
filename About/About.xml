@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+		<name>Tensura - Slime Adventures</name>
+		<author>Akenno</author>
+		<supportedVersions><li>1.5</li></supportedVersions>
+		<packageId>Akenno.Tensura</packageId>
+		<description>Tensura - Slime Adventures is a Mod Project with abilities and races from the Isekai Anime "Reincarnated as a Slime"!</description>
+		<modDependencies>
+			<li>
+				<packageId>Zomuro.ItsSorcery</packageId>
+				<displayName>It's Sorcery</displayName>
+				<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3013487115</steamWorkshopUrl>
+			
+			</li>
+			<li>
+				<packageId>Akenno.Isekai</packageId>
+				<displayName>Isekai Adventures</displayName>
+			</li>
+		</modDependencies>
+
+</ModMetaData>
