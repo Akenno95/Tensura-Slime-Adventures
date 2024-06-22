@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+		
+		<HediffDef ParentName="DiseaseBase">
+			<defName>Tensura_Race_Slime</defName>
+			<label>Slime Race</label>
+			<description>This pawn is considered to be a slime in human form.</description>
+			<isBad>false</isBad>
+			<initialSeverity>1</initialSeverity>
+			<maxSeverity>10</maxSeverity>
+			<stages>
+				<li>
+					<label>Slime</label>
+					<painFactor>0</painFactor>
+					<!--naturalHealingFactor>100</naturalHealingFactor-->
+					<totalBleedFactor>0</totalBleedFactor>
+					<regeneration MayRequire="Ludeon.RimWorld.Anomaly">1000</regeneration>
+					<statOffsets>
+						<Isekai_Magic_MaxMP>1000</Isekai_Magic_MaxMP>
+					</statOffsets>
+				</li>
+				<li>
+					<minSeverity>2</minSeverity>
+					<label>Demon Slime</label>
+					<regeneration MayRequire="Ludeon.RimWorld.Anomaly">10000</regeneration>
+				</li>
+			</stages>
+			<comps>
+				
+			</comps>
+		</HediffDef>
+
+
+</Defs>

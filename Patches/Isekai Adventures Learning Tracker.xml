@@ -11,6 +11,15 @@
 		</Operation>
 		
 		
+		<Operation Class="PatchOperationAdd">
+			<xpath>Defs/ItsSorceryFramework.SorcerySchemaDef[defName="Isekai_Resistances"]/learningTrackerDefs</xpath>
+			<order>Append</order>
+			<value>
+				<li>Tensura_Nullifications_LearningTrackerTree</li>
+			</value>
+		</Operation>
+		
+		
 </Patch>
 	
 	
