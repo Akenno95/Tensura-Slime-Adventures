@@ -10,11 +10,11 @@
 			<isBad>false</isBad>
 			<maxSeverity>1</maxSeverity>
 			<stages>
-				<li>
+				<!--li>
 					<statFactors>
 						<StaggerDurationFactor>0.01</StaggerDurationFactor>
 					</statFactors>
-				</li>
+				</li-->
 			</stages>
 			<comps>
 				 <li MayRequire = "smartkar.athenaframework" Class="AthenaFramework.HediffCompProperties_Shield">
@@ -101,6 +101,7 @@
 					</statFactors>						
 				</li>
 			</stages>
+			
 		</HediffDef>
 
 

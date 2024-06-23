@@ -95,32 +95,39 @@
 		
 		<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
 			<learningTrackerDef>Tensura_Nullifications_LearningTrackerTree</learningTrackerDef>
-			<defName>Tensura_Node_MentalBreakNullification</defName>
-			<label>Mental Break Nullification</label>
-			<description>You can nullify mental breaks.</description>
+			<defName>Tensura_Node_StaggerNullification</defName>
+			<label>Stagger Nullification</label>
+			<description>You can nullify stagger.</description>
 			
 			<coordX>0</coordX>
 			<coordY>4</coordY>
 			<pointReq>10</pointReq>
 			
+			<prereqs>
+				<li>Isekai_Node_StaggerResistance5</li>
+			</prereqs>
+			
+			<hediffRemove>
+				<li>Isekai_Stagger_Resistance</li>
+			</hediffRemove>
 			<hediffAdd>
-				<li><hediffDef>Tensura_MentalBreak_Nullification</hediffDef><severity>1</severity></li>
+				<li><hediffDef>Tensura_Stagger_Nullification</hediffDef><severity>1</severity></li>
 			</hediffAdd>
 		</ItsSorceryFramework.LearningTreeNodeDef>
 		
 		
 		<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
 			<learningTrackerDef>Tensura_Nullifications_LearningTrackerTree</learningTrackerDef>
-			<defName>Tensura_Node_StaggerNullification</defName>
-			<label>Stagger Nullification</label>
-			<description>You can nullify stagger.</description>
+			<defName>Tensura_Node_MentalBreakNullification</defName>
+			<label>Mental Break Nullification</label>
+			<description>You can nullify mental breaks.</description>
 			
 			<coordX>0</coordX>
 			<coordY>5</coordY>
 			<pointReq>10</pointReq>
 			
 			<hediffAdd>
-				<li><hediffDef>Tensura_Stagger_Nullification</hediffDef><severity>1</severity></li>
+				<li><hediffDef>Tensura_MentalBreak_Nullification</hediffDef><severity>1</severity></li>
 			</hediffAdd>
 		</ItsSorceryFramework.LearningTreeNodeDef>
 
