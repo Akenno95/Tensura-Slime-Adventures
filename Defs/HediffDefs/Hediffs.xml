@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+		
+		<HediffDef ParentName="DiseaseBase">
+			<defName>Tensura_GluttonyPassive</defName>
+			<label>Gluttony passive</label>
+			<description>Gluttony devouring projectiles.</description>
+			<!--hediffClass>HediffWithComps</hediffClass-->
+			<isBad>false</isBad>
+			<everCurableByItem>false</everCurableByItem>
+			<maxSeverity>1</maxSeverity>
+			<stages>
+				<!--li>
+					<statFactors>
+						<StaggerDurationFactor>0.01</StaggerDurationFactor>
+					</statFactors>
+				</li-->
+			</stages>
+			<comps>
+				 <li MayRequire = "smartkar.athenaframework" Class="AthenaFramework.HediffCompProperties_Shield">
+					<maxEnergy>100</maxEnergy>
+					<energyRechargeRate>0.5</energyRechargeRate>
+					<resetDelay>3200</resetDelay>
+					
+					<!--<energyPerDamageModifier>0.35</energyPerDamageModifier>
+					<resetDelay>3200</resetDelay>
+					<energyOnStart>1</energyOnStart>
+					<removeOnBreak>true</removeOnBreak>
+
+					<blocksRangedDamage>true</blocksRangedDamage>
+					<blocksExplosions>true</blocksExplosions>
+					<blocksMeleeDamage>true</blocksMeleeDamage>-->
+					
+					<!--whitelistedDamageDefs>
+						<li>EMP</li>
+					</whitelistedDamageDefs>
+					<energyPerDamageModifier>0</energyPerDamageModifier-->
+					<shatterOn />
+					
+					<absorbFleck>ExplosionFlash</absorbFleck>
+					<breakFleck>ExplosionFlash</breakFleck>
+					<shieldBreakEffecter>Shield_Break</shieldBreakEffecter>
+
+					<absorbSound>EnergyShield_AbsorbDamage</absorbSound>
+					<resetSound>EnergyShield_Reset</resetSound>
+					
+					<displayGizmo>true</displayGizmo>
+					<gizmoTitle>Gluttony</gizmoTitle>
+					<gizmoTip>Gluttony passive devouring projectiles.</gizmoTip>
+					
+					<minDrawSize>1.2</minDrawSize>
+					<maxDrawSize>1.55</maxDrawSize>
+					<scaleWithOwner>true</scaleWithOwner>
+					<graphicData>
+						<texPath>Other/ShieldBubble</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+						<shaderType>Transparent</shaderType>
+						<color>(1.0, 0.9, 0.5)</color>
+					</graphicData>
+				 </li>
+			</comps>
+		</HediffDef>
+
+
+		<HediffDef ParentName="DiseaseBase">
+			<defName>Tensura_Pain_Nullification</defName>
+			<label>Pain nullification</label>
+			<description>The ability to nullify pain.</description>
+			<isBad>false</isBad>
+			<maxSeverity>1</maxSeverity>
+			<stages>
+				<li>
+					<painFactor>0</painFactor>
+					<!--naturalHealingFactor>100</naturalHealingFactor>
+					<totalBleedFactor>0</totalBleedFactor>
+					<regeneration MayRequire="Ludeon.RimWorld.Anomaly">1000</regeneration-->
+					
+						
+				</li>
+			</stages>
+
+		</HediffDef>
+		
+		
+		<HediffDef ParentName="DiseaseBase">
+			<defName>Tensura_MentalBreak_Nullification</defName>
+			<label>Mental break nullification</label>
+			<description>The ability to nullify mental breaks. (May require anomaly)</description>
+			<isBad>false</isBad>
+			<maxSeverity>1</maxSeverity>
+			<stages>
+				<li>
+					<blocksMentalBreaks MayRequire="Ludeon.RimWorld.Anomaly">true</blocksMentalBreaks>	
+				</li>
+			</stages>
+
+		</HediffDef>
+		
+		
+		<HediffDef ParentName="DiseaseBase">
+			<defName>Tensura_Stagger_Nullification</defName>
+			<label>Stagger nullification</label>
+			<description>The ability to nullify stagger / slow down effects.</description>
+			<isBad>false</isBad>
+			<maxSeverity>1</maxSeverity>
+			<stages>
+				<li>
+					<statFactors>
+						<StaggerDurationFactor>0</StaggerDurationFactor>
+					</statFactors>						
+				</li>
+			</stages>
+			
+		</HediffDef>
+
+
+</Defs>

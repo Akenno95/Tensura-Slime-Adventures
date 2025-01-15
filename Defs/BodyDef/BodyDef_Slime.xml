@@ -1,0 +1,110 @@
+<Defs>
+
+  <!-- Custom bodyparts for our Neko Harpies. -->
+	<BodyPartDef>
+		<defName>Tensura_BodyParts_Slime_Core</defName>
+		<label>Core</label>
+		<hitPoints>10</hitPoints>
+		<skinCovered>false</skinCovered>
+		<canScarify>false</canScarify>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<bleedRate>0</bleedRate>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<solid>true</solid>
+		<delicate>true</delicate>
+		<hitChanceFactors>
+			<li>
+				<key>Blunt</key>
+				<value>0</value>
+			</li>
+		</hitChanceFactors>
+			<tags>
+				<!--li>BreathingSourceCage</li-->
+				<li>ConsciousnessSource</li>
+				<!--<li>SightSource</li>
+				<li>HearingSource</li>-->
+				<li>EatingSource</li>
+				<li>TalkingSource</li>
+				<li>BloodPumpingSource</li>
+				<li>BreathingSource</li>
+				<li>BloodFiltrationKidney</li>
+				<li>BloodFiltrationLiver</li>
+				<li>MetabolismSource</li>
+				<li>MovingLimbCore</li>
+				<li>ManipulationLimbCore</li>
+				<!--li>Mirrored</li-->
+			</tags>
+		<!--spawnThingOnRemoved>Monster_Core</spawnThingOnRemoved-->
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>Tensura_BodyParts_Slime_Body</defName>
+		<label>Body</label>
+		<hitPoints>90</hitPoints>
+		<skinCovered>true</skinCovered>
+		<canScarify>false</canScarify>
+		<canSuggestAmputation>false</canSuggestAmputation>
+		<bleedRate>5</bleedRate>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<frostbiteVulnerability>1</frostbiteVulnerability>
+			<tags>
+				<!--<li>ManipulationLimbCore</li>-->
+				<li>ManipulationLimbSegment</li>
+				<!--<li>ManipulationLimbDigit</li>-->
+				<!--<li>MovingLimbCore</li>-->
+				<li>MovingLimbSegment</li>
+				<li>BreathingPathway</li>
+				<li>EatingPathway</li>
+				<li>TalkingPathway</li>
+				<li>SightSource</li>
+				<li>HearingSource</li>
+				<!--<li>EatingSource</li>
+				<li>TalkingSource</li>
+				<li>BreathingSource</li>-->
+				<!--li>Mirrored</li-->
+			</tags> 
+	</BodyPartDef>
+
+  <!-- This is literally just the copied BodyDef of the humans with changes for our custom parts -->
+  <!-- Note that for similar parts you can simply change the label instead of actually changing the part. -->
+  
+	<BodyDef>
+		<defName>Tensura_Body_Slime</defName>
+		<label>Intelligent Slime</label>
+		<corePart>
+			<def>Tensura_BodyParts_Slime_Body</def>
+			<customLabel>Slime Body</customLabel>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<groups>
+				<li>Torso</li>
+			</groups>
+			<parts>
+				<li>
+					<def>Head</def>		<!-- needed for showing head ingame -->
+					<customLabel>Inner Core</customLabel>
+					<coverage>0.001</coverage>
+					<depth>Inside</depth>
+					<groups>
+						<li>FullHead</li>
+					</groups>
+					<parts>
+						<li>
+							<def>Tensura_BodyParts_Slime_Core</def>
+							<customLabel>Slime Core</customLabel>
+							<coverage>0.001</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<!--<li>Torso</li>-->
+								<!--<li>FullHead</li>
+								<li>UpperHead</li>-->
+								<li>HeadAttackTool</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+  
+</Defs>
