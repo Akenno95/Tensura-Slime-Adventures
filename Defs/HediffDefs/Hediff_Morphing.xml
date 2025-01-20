@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+		
+		<!-- Races and more -->
+		
+		<!-- Slime -->
+		
+		<HediffDef ParentName="DiseaseBase">
+			<defName>Tensura_Morph_Slime</defName>
+			<label>Slime morphing</label>
+			<description>Morphing into a slime...</description>
+			<isBad>false</isBad>
+			<everCurableByItem>false</everCurableByItem>
+			<initialSeverity>1</initialSeverity>
+			<comps>
+            <li Class="EBSGFramework.HediffCompProperties_AlterXenotype">
+                <xenotypes>
+                    <Tensura_Race_Slime>1</Tensura_Race_Slime>
+                </xenotypes>
+				<severities>1~999</severities>
+				<setXenotype>False</setXenotype>
+            </li>
+        </comps>
+			<stages>
+			</stages>
+			
+			
+		</HediffDef>
+		
+		
+		
+		
+		
+		
+		
+		
+</Defs>

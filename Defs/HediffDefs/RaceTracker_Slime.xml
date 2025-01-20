@@ -15,13 +15,13 @@
 			<initialSeverity>1</initialSeverity>
 	
 			<disablesNeeds>
-				<li>Comfort</li>
-				<li>Mood</li>
+				<!-- <li>Comfort</li> -->
+				<!-- <li>Mood</li> -->
 				<li>Rest</li>
 				<li>Beauty</li>
 				<li>Outdoors</li>
 				<li>Indoors</li>
-				<li>Joy</li>
+				<!-- <li>Joy</li> -->
 				<li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
 				<li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
 				<li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
@@ -35,37 +35,91 @@
 			-->
 			<stages Inherit="False">
 				<li>
-				<!-- Oh no, they bleed out fast! -->
-				<!--<totalBleedFactor>0</totalBleedFactor>-->
+					<label>Intelligent Slime</label>
+					<naturalHealingFactor>10</naturalHealingFactor>
+					<regeneration MayRequire="Ludeon.RimWorld.Anomaly">100</regeneration>	<!-- Limb Regrowth-->
+					<!-- Oh no, they bleed out fast! -->
+					<!--<totalBleedFactor>0</totalBleedFactor>-->
 
-				<!-- ...and pick fights... -->
-				<socialFightChanceFactor>0</socialFightChanceFactor>
-				<!--<statOffsets>
+					<!-- ...and pick fights... -->
+					<socialFightChanceFactor>0</socialFightChanceFactor>
+					<!--<statOffsets>
+				
+					</statOffsets> -->
+					<statFactors>
+						<Isekai_Magic_MaxMP>3</Isekai_Magic_MaxMP>
+						<Isekai_Magic_MPRecovery>2</Isekai_Magic_MPRecovery>
+						<Isekai_Magic_AbsMinMP>1.5</Isekai_Magic_AbsMinMP>
+						<InjuryHealingFactor>5</InjuryHealingFactor>
+					</statFactors>
+					<!--<capMods>
+						<li>
+							<capacity>Sight</capacity>
+							<offset>-1.0</offset>
+						</li>
+					</capMods>-->
 			
-				</statOffsets>
-				<statFactors>
-			
-				</statFactors>-->
-				<!--<capMods>
-					<li>
-						<capacity>Sight</capacity>
-						<offset>-1.0</offset>
-					</li>
-				</capMods>-->
-			
-				<makeImmuneTo>
-					<li>Flu</li>
-					<li>Malaria</li>
-					<li>SleepingSickness</li>
-					<li>Plague</li>
-					<li>WoundInfection</li>
-					<li>LungRot</li>
-					<li>GutWorms</li>
-					<li>MuscleParasites</li>
-					<li>OrganDecay</li>
-					<li>LungRot</li>
-					<li>FoodPoisoning</li>
-				</makeImmuneTo>
+					<makeImmuneTo>
+						<li>Flu</li>
+						<li>Malaria</li>
+						<li>SleepingSickness</li>
+						<li>Plague</li>
+						<li>WoundInfection</li>
+						<li>LungRot</li>
+						<li>GutWorms</li>
+						<li>MuscleParasites</li>
+						<li>OrganDecay</li>
+						<li>LungRot</li>
+						<li>FoodPoisoning</li>
+						<li>HeartArteryBlockage</li>
+						<li>Asthma</li>
+						<li>Alzheimers</li>
+						<li>Dementia</li>
+						<li>HearingLoss</li>
+						<li>Cataract</li>
+						<li>Frail</li>
+						<li>BadBack</li>
+						<li>Carcinoma</li>
+						<li>HeartAttack</li>
+					</makeImmuneTo>
+				</li>
+				<li>
+					<label>Demon Slime</label>
+					<minSeverity>2</minSeverity>
+
+					<naturalHealingFactor>100</naturalHealingFactor>
+					<regeneration MayRequire="Ludeon.RimWorld.Anomaly">1000</regeneration>
+
+					<statFactors>
+						<Isekai_Magic_MaxMP>10</Isekai_Magic_MaxMP>
+						<Isekai_Magic_MPRecovery>5</Isekai_Magic_MPRecovery>
+						<Isekai_Magic_AbsMinMP>3</Isekai_Magic_AbsMinMP>
+						<InjuryHealingFactor>50</InjuryHealingFactor>
+					</statFactors>
+
+					<makeImmuneTo>
+						<li>Flu</li>
+						<li>Malaria</li>
+						<li>SleepingSickness</li>
+						<li>Plague</li>
+						<li>WoundInfection</li>
+						<li>LungRot</li>
+						<li>GutWorms</li>
+						<li>MuscleParasites</li>
+						<li>OrganDecay</li>
+						<li>LungRot</li>
+						<li>FoodPoisoning</li>
+						<li>HeartArteryBlockage</li>
+						<li>Asthma</li>
+						<li>Alzheimers</li>
+						<li>Dementia</li>
+						<li>HearingLoss</li>
+						<li>Cataract</li>
+						<li>Frail</li>
+						<li>BadBack</li>
+						<li>Carcinoma</li>
+						<li>HeartAttack</li>
+					</makeImmuneTo>
 				</li>
 			</stages>
 
@@ -101,9 +155,29 @@
 						<banlist>
 							<!-- Example of blocking common hediffs.
 							More powerful than the vanilla system since it will remove them if applied by unusual means. -->
-							<li>Cataract</li>
-							<li>Asthma</li>
+							<li>Flu</li>
+							<li>Malaria</li>
+							<li>SleepingSickness</li>
+							<li>Plague</li>
+							<li>WoundInfection</li>
+							<li>LungRot</li>
+							<li>GutWorms</li>
+							<li>MuscleParasites</li>
+							<li>OrganDecay</li>
+							<li>LungRot</li>
 							<li>FoodPoisoning</li>
+							<li>HeartArteryBlockage</li>
+							<li>Asthma</li>
+							<li>Alzheimers</li>
+							<li>Dementia</li>
+							<li>HearingLoss</li>
+							<li>Cataract</li>
+							<li>Frail</li>
+							<li>BadBack</li>
+							<li>Carcinoma</li>
+							<li>HeartAttack</li>
+
+							<li>Isekai_ProgressTrackerRPG_Hediff_Starting</li>
 						</banlist>
 					</hediffFilters>
 					<traitFilters>
@@ -127,6 +201,14 @@
 						<li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Female</li>
 						<li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Female</li>
 						<li>Naked</li>
+						<li>AteWithoutTable</li>
+						<li>SoakingWet</li>
+						<li>ButcheredHumanlikeCorpse</li>
+						<li>KnowButcheredHumanlikeCorpse</li>
+						<li>ButcheredHumanlikeCorpseOpinion</li>
+						<li>ObservedLayingCorpse</li>
+						<li>ObservedLayingRottingCorpse</li>
+						<li>WitnessedDeathNonAlly</li>
 					</nullsThoughts>
 					<geneTagFilters>
 						<blacklist>
@@ -141,6 +223,7 @@
 						<!--<li MayRequire="Ludeon.Rimworld.Biotech">Beard_NoBeardOnly</li>-->
 						<!--<li>Tensura_Gene_Slime_Body</li>
 						<li>Tensura_Gene_Slime_Head</li>-->
+						<li>Isekai_Gene_Adventurer</li>
 					</immutableEndogenes>
 					<geneFilters>
 						<blacklist>
@@ -154,18 +237,18 @@
 					<babyStartAge>20</babyStartAge>
 	
 					<aptitudes>
-						<Melee>-4</Melee>
-						<Shooting>-4</Shooting>
-						<Construction>-4</Construction>
-						<Mining>-4</Mining>
-						<Cooking>-4</Cooking>
-						<Plants>-4</Plants>
-						<Animals>-4</Animals> 
-						<Crafting>-4</Crafting>
-						<Artistic>-4</Artistic> 
-						<Medicine>-4</Medicine> 
-						<Social>-4</Social>
-						<Intellectual>-4</Intellectual>
+						<Melee>-5</Melee>
+						<Shooting>-5</Shooting>
+						<Construction>-5</Construction>
+						<Mining>-5</Mining>
+						<Cooking>-5</Cooking>
+						<Plants>-5</Plants>
+						<Animals>-5</Animals> 
+						<Crafting>-5</Crafting>
+						<Artistic>-5</Artistic> 
+						<Medicine>-5</Medicine> 
+						<Social>-5</Social>
+						<Intellectual>-5</Intellectual>
 					</aptitudes>
 		
 					<!--<apparelRestrictions>

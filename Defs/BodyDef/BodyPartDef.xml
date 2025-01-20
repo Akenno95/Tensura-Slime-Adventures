@@ -1,0 +1,35 @@
+<Defs>
+
+
+		<!-- Slime Body Parts -->
+
+		<BodyPartDef>
+			<defName>Tensura_BodyParts_Slime_Body</defName>
+			<label>Body</label>
+			<hitPoints>100</hitPoints>
+			<skinCovered>true</skinCovered>
+			<canScarify>false</canScarify>
+			<canSuggestAmputation>false</canSuggestAmputation>
+			<bleedRate>2</bleedRate>
+			<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+			<frostbiteVulnerability>1</frostbiteVulnerability>
+			<tags>
+				<!--<li>ManipulationLimbCore</li>-->
+				<li>ManipulationLimbSegment</li>
+				<!--<li>ManipulationLimbDigit</li>-->
+				<!--<li>MovingLimbCore</li>-->
+				<li>MovingLimbSegment</li>
+				<li>BreathingPathway</li>
+				<li>EatingPathway</li>
+				<li>TalkingPathway</li>
+				<li>SightSource</li>
+				<li>HearingSource</li>
+				<!--<li>EatingSource</li>
+				<li>TalkingSource</li>
+				<li>BreathingSource</li>-->
+				<!--li>Mirrored</li-->
+			</tags> 
+		</BodyPartDef>
+
+  
+</Defs>

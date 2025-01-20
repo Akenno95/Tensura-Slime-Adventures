@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-		
+
 		<HediffDef ParentName="DiseaseBase">
 			<defName>Tensura_GluttonyPassive</defName>
+			<label>Gluttony passive</label>
+			<description>Gluttony devouring projectiles.</description>
+			<!--hediffClass>HediffWithComps</hediffClass-->
+			<isBad>false</isBad>
+			<everCurableByItem>false</everCurableByItem>
+			<maxSeverity>1</maxSeverity>
+			<stages>
+				<!--li>
+					<statFactors>
+						<StaggerDurationFactor>0.01</StaggerDurationFactor>
+					</statFactors>
+				</li-->
+			</stages>
+			<comps>
+				<li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+					<bodyPartsToRemove>
+						<li>Head</li>
+					</bodyPartsToRemove>
+					<!-- <bodyPartsToDamage>
+						<li>
+							<bodyPart>Kidney</bodyPart>
+							<damagePercentage>0.5</damagePercentage>
+						</li>
+					</bodyPartsToDamage> -->
+				</li>
+			</comps>
+		</HediffDef>
+
+		<HediffDef ParentName="DiseaseBase">
+			<defName>Tensura_GluttonyPassive1</defName>
 			<label>Gluttony passive</label>
 			<description>Gluttony devouring projectiles.</description>
 			<!--hediffClass>HediffWithComps</hediffClass-->
