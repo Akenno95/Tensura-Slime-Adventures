@@ -17,17 +17,10 @@
             <statBases>
             <MarketValue>500</MarketValue>
 
-            <!-- Speeeeeeed! -->
             <MoveSpeed>0.8</MoveSpeed>
-
-            <!-- Good at handing cold. Heat, not so much. -->
             <ComfyTemperatureMin>-10</ComfyTemperatureMin>
             <ComfyTemperatureMax>30</ComfyTemperatureMax>
-
-            <!-- For some reason they their feathers are permanently soaked in kerosene-->
             <!--Flammability>0</Flammability-->
-
-            <!-- Neko-harpies will flirt with anything relentlessly, because of course they will.-->
             <SM_FlirtChance>0</SM_FlirtChance>
             <Fertility MayRequire="Ludeon.Rimworld.Biotech">0</Fertility>
 

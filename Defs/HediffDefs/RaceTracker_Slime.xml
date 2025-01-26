@@ -25,7 +25,7 @@
 				<li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
 				<li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
 				<li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
-				<!-- <li>FoodVariety</li> -->
+				<li>Food</li>
 			</disablesNeeds>
 	
 			<!--
@@ -43,21 +43,27 @@
 
 					<!-- ...and pick fights... -->
 					<socialFightChanceFactor>0</socialFightChanceFactor>
-					<!--<statOffsets>
-				
-					</statOffsets> -->
+					<statOffsets>
+						<Isekai_Magic_MaxMP>1000</Isekai_Magic_MaxMP>
+						<Isekai_Magic_MPRecovery>5</Isekai_Magic_MPRecovery>
+						<Isekai_Magic_AbsMinMP>-500</Isekai_Magic_AbsMinMP>
+					</statOffsets>
 					<statFactors>
 						<Isekai_Magic_MaxMP>3</Isekai_Magic_MaxMP>
 						<Isekai_Magic_MPRecovery>2</Isekai_Magic_MPRecovery>
 						<Isekai_Magic_AbsMinMP>1.5</Isekai_Magic_AbsMinMP>
 						<InjuryHealingFactor>5</InjuryHealingFactor>
 					</statFactors>
-					<!--<capMods>
+					<capMods>
 						<li>
 							<capacity>Sight</capacity>
 							<offset>-1.0</offset>
 						</li>
-					</capMods>-->
+						<li>
+							<capacity>Talking</capacity>
+							<offset>-1.0</offset>
+						</li>
+					</capMods>
 			
 					<makeImmuneTo>
 						<li>Flu</li>
@@ -90,12 +96,31 @@
 					<naturalHealingFactor>100</naturalHealingFactor>
 					<regeneration MayRequire="Ludeon.RimWorld.Anomaly">1000</regeneration>
 
+					<socialFightChanceFactor>0</socialFightChanceFactor>
+					
+					<statOffsets>
+						<Isekai_Magic_MaxMP>10000</Isekai_Magic_MaxMP>
+						<Isekai_Magic_MPRecovery>10</Isekai_Magic_MPRecovery>
+						<Isekai_Magic_AbsMinMP>-5000</Isekai_Magic_AbsMinMP>
+					</statOffsets>
+
 					<statFactors>
 						<Isekai_Magic_MaxMP>10</Isekai_Magic_MaxMP>
 						<Isekai_Magic_MPRecovery>5</Isekai_Magic_MPRecovery>
 						<Isekai_Magic_AbsMinMP>3</Isekai_Magic_AbsMinMP>
 						<InjuryHealingFactor>50</InjuryHealingFactor>
 					</statFactors>
+
+					<capMods>
+						<li>
+							<capacity>Sight</capacity>
+							<offset>-1.0</offset>
+						</li>
+						<li>
+							<capacity>Talking</capacity>
+							<offset>-1.0</offset>
+						</li>
+					</capMods>
 
 					<makeImmuneTo>
 						<li>Flu</li>

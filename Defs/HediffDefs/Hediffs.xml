@@ -10,6 +10,7 @@
 			<isBad>false</isBad>
 			<everCurableByItem>false</everCurableByItem>
 			<maxSeverity>1</maxSeverity>
+			<defaultInstallPart>Isekai_BodyParts_Soul</defaultInstallPart>
 			<stages>
 				<!--li>
 					<statFactors>
@@ -18,17 +19,24 @@
 				</li-->
 			</stages>
 			<comps>
-				<li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+				<li Class="EBSGFramework.HediffCompProperties_DamageOverTime">
+					<damage>Burn</damage>
+					<createFilth>False</createFilth>
+					<damageAttachedPart>True</damageAttachedPart>
+					<tickInterval>60</tickInterval>
+					<damageAmount>20</damageAmount>
+				</li>
+				<!-- <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
 					<bodyPartsToRemove>
 						<li>Head</li>
 					</bodyPartsToRemove>
-					<!-- <bodyPartsToDamage>
+					<<bodyPartsToDamage>
 						<li>
 							<bodyPart>Kidney</bodyPart>
 							<damagePercentage>0.5</damagePercentage>
 						</li>
-					</bodyPartsToDamage> -->
-				</li>
+					</bodyPartsToDamage>
+				</li> -->
 			</comps>
 		</HediffDef>
 
