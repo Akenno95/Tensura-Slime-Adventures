@@ -6,12 +6,12 @@
 		<!-- Slime Xenotype -->
 	
 			<XenotypeDef MayRequire = "Ludeon.RimWorld.Biotech">
-				<defName>Tensura_Race_Slime</defName>
-				<label>Slime</label>
+				<defName>Tensura_Morph_Slime</defName>
+				<label>Slime Morph</label>
 				<description>This pawn morphed into a slime with custom body.</description>
 				<iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
 				
-				<combatPowerFactor>0.1</combatPowerFactor>
+				<combatPowerFactor>0</combatPowerFactor>
 				<inheritable>true</inheritable>
 				<factionlessGenerationWeight>0</factionlessGenerationWeight>
 				
@@ -31,7 +31,7 @@
 				<description>This xenotype is a slime with custom body.</description>
 				<iconPath>RaceTextures/Slime/Slime_Body_south</iconPath>
 				
-				<combatPowerFactor>0.1</combatPowerFactor>
+				<combatPowerFactor>0</combatPowerFactor>
 				<inheritable>true</inheritable>
 				<factionlessGenerationWeight>1</factionlessGenerationWeight>
 				
@@ -58,7 +58,7 @@
 				<description>This is Rimuru Tempest, a slime with custom body.</description>
 				<iconPath>RaceTextures/Slime/Rimuru_Body</iconPath>
 				
-				<combatPowerFactor>0.1</combatPowerFactor>
+				<combatPowerFactor>0</combatPowerFactor>
 				<inheritable>true</inheritable>
 				<factionlessGenerationWeight>0</factionlessGenerationWeight>
 				

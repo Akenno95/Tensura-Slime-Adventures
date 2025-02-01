@@ -28,7 +28,7 @@
 		</GeneDef> -->
 
 
-		<!-- Body Switch to custom body -->
+		<!-- Body Switch to custom slime body -->
 
 			<GeneDef MayRequire = "Ludeon.RimWorld.Biotech" ParentName="BS_BodySwitch">
 				<defName>Tensura_BodySwitch_Slime</defName>
@@ -41,8 +41,8 @@
 				<canGenerateInGeneSet>false</canGenerateInGeneSet>
 				
 				<iconPath>RaceTextures/Slime/Slime_Body_south</iconPath> 
-				<displayCategory>Tensura_Genes</displayCategory>
-				<displayOrderInCategory>202</displayOrderInCategory>
+				<displayCategory>Isekai_Genes_Morphing</displayCategory>
+				<displayOrderInCategory>200</displayOrderInCategory>
 				
 				<modExtensions>
 				<li Class="BigAndSmall.PawnExtension">
@@ -68,7 +68,7 @@
 				
 				<iconPath>RaceTextures/Slime/Slime_Body_south</iconPath>
 				<displayCategory>Tensura_Genes</displayCategory>
-				<displayOrderInCategory>203</displayOrderInCategory>
+				<displayOrderInCategory>200</displayOrderInCategory>
 				
 				<tattoosVisible>false</tattoosVisible>
 				<!--beardTagFilter>
@@ -156,7 +156,7 @@
 				
 				<iconPath>RaceTextures/Slime/Slime_Head_south</iconPath>
 				<displayCategory>Tensura_Genes</displayCategory>
-				<displayOrderInCategory>204</displayOrderInCategory>
+				<displayOrderInCategory>201</displayOrderInCategory>
 			
 				<tattoosVisible>false</tattoosVisible>
 				<beardTagFilter>
@@ -257,7 +257,7 @@
 				
 				<iconPath>RaceTextures/Slime/Rimuru_Body</iconPath>
 				<displayCategory>Tensura_Genes</displayCategory>
-				<displayOrderInCategory>205</displayOrderInCategory>
+				<displayOrderInCategory>202</displayOrderInCategory>
 				
 				<tattoosVisible>false</tattoosVisible>
 				<!--beardTagFilter>

@@ -66,6 +66,12 @@
 					</capMods>
 			
 					<makeImmuneTo>
+						<li>SandInEyes</li>
+						<li>DirtInEyes</li>
+						<li>MudInEyes</li>
+						<li>GravelInEyes</li>
+						<li>WaterInEyes</li>
+
 						<li>Flu</li>
 						<li>Malaria</li>
 						<li>SleepingSickness</li>
@@ -123,6 +129,12 @@
 					</capMods>
 
 					<makeImmuneTo>
+						<li>SandInEyes</li>
+						<li>DirtInEyes</li>
+						<li>MudInEyes</li>
+						<li>GravelInEyes</li>
+						<li>WaterInEyes</li>
+
 						<li>Flu</li>
 						<li>Malaria</li>
 						<li>SleepingSickness</li>
@@ -180,6 +192,13 @@
 						<banlist>
 							<!-- Example of blocking common hediffs.
 							More powerful than the vanilla system since it will remove them if applied by unusual means. -->
+							
+							<li>SandInEyes</li>
+							<li>DirtInEyes</li>
+							<li>MudInEyes</li>
+							<li>GravelInEyes</li>
+							<li>WaterInEyes</li>
+							
 							<li>Flu</li>
 							<li>Malaria</li>
 							<li>SleepingSickness</li>
