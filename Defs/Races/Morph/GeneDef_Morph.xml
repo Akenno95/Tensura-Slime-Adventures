@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+
+	<!-- Body Switch -->
+
+		<!-- Slime -->
+
+			<GeneDef MayRequire = "Ludeon.RimWorld.Biotech" ParentName="BS_BodySwitch">
+				<defName>Tensura_BodySwitch_Slime</defName>
+				<label>Morphing slime</label>
+				<description>Morphing into a slime...</description>
+				
+				<biostatCpx>0</biostatCpx>
+				<biostatMet>0</biostatMet>
+				<selectionWeight>0</selectionWeight>
+				<canGenerateInGeneSet>false</canGenerateInGeneSet>
+				
+				<iconPath>RaceTextures/Slime/Slime_Body_south</iconPath> 
+				<displayCategory>Isekai_Genes_Morphing</displayCategory>
+				<displayOrderInCategory>200</displayOrderInCategory>
+				
+				<modExtensions>
+				<li Class="BigAndSmall.PawnExtension">
+					<hideInGenePicker>true</hideInGenePicker>
+					<thingDefSwap>Tensura_Race_Slime</thingDefSwap>
+					<forceThingDefSwap>false</forceThingDefSwap>
+				</li>
+				</modExtensions>
+			</GeneDef>
+
+
+	<!-- Disguised -->
+
+			<GeneDef>
+				<defName>Tensura_Disguised_Slime</defName>
+				<label>disguised Slime</label>
+				<description>Carriers of this gene hides their slime appearance.</description>
+				<geneClass>BetterPrerequisites.PGene</geneClass>
+
+				<biostatCpx>0</biostatCpx>
+				<biostatMet>0</biostatMet>
+				<selectionWeight>0</selectionWeight>
+				<canGenerateInGeneSet>false</canGenerateInGeneSet>
+
+				<iconPath>GeneIcons/BS_DisguisedDemon</iconPath>
+				<displayCategory>Isekai_Genes_Morphing</displayCategory>
+
+				<modExtensions>
+					<li Class="BetterPrerequisites.GeneSuppressor_Gene">
+						<supressedGenes>
+							<li>Tensura_Gene_Rimuru_Body</li>
+							<li>Tensura_Gene_Slime_Body</li>
+							<li>Tensura_Gene_Slime_Head</li>
+						</supressedGenes>
+					</li>
+					<li Class="BigAndSmall.PawnExtension">
+						<hideInGenePicker>true</hideInGenePicker>
+					</li>
+				</modExtensions>
+			</GeneDef>
+
+			<GeneDef>
+				<defName>Tensura_Disguise_Slime</defName>
+				<label>normal looking</label>
+				<description>Carriers of this gene are looking like they should.</description>
+				<geneClass>BetterPrerequisites.PGene</geneClass>
+
+				<biostatCpx>0</biostatCpx>
+				<biostatMet>0</biostatMet>
+				<selectionWeight>0</selectionWeight>
+				<canGenerateInGeneSet>false</canGenerateInGeneSet>
+
+				<iconPath>GeneIcons/BS_DisguisedDemon</iconPath>
+				<displayCategory>Isekai_Genes_Morphing</displayCategory>
+
+				<modExtensions>
+					<li Class="BetterPrerequisites.GeneSuppressor_Gene">
+						<supressedGenes>
+							<li>Tensura_Disguised_Slime</li>
+						</supressedGenes>
+					</li>
+					<li Class="BigAndSmall.PawnExtension">
+						<hideInGenePicker>true</hideInGenePicker>
+					</li>
+				</modExtensions>
+			</GeneDef>
+
+
+
+</Defs>

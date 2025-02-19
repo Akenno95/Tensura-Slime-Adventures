@@ -28,6 +28,11 @@
 				<steamWorkshopUrl>steam://url/CommunityFilePage/2925432336</steamWorkshopUrl>
 			</li>
 			<li>
+				<packageId>RedMattis.BigSmall.Core</packageId>
+				<displayName>Big and Small - Genes &amp; More</displayName>
+				<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2920751126</steamWorkshopUrl>
+			</li>
+			<li>
 				<packageId>smartkar.athenaframework</packageId>
 				<displayName>Athena Framework</displayName>
 				<steamWorkshopUrl>steam://url/CommunityFilePage/2903359518</steamWorkshopUrl>

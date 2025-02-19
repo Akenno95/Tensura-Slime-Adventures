@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<!-- Engulf -->
+
+		<!-- Throw-Up -->
+
+			<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+				<sorcerySchema>Isekai_Magic</sorcerySchema>
+				<defName>Tensura_Ability_Release</defName>
+				<label>Release</label>
+				<description>Release what is inside your belly.</description>
+				<level>1</level>
+				<!--<iconPath>UI/Sorceries/hea</iconPath>-->
+				<!--warmupSound>...</warmupSound-->
+				<aiCanUse>true</aiCanUse>
+				<cooldownTicksRange>100</cooldownTicksRange>
+				<hostile>false</hostile>
+				<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+				<targetRequired>False</targetRequired>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+				<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+			
+				<statBases>
+					<Isekai_MPCost>0</Isekai_MPCost>
+					<!-- <Ability_Duration>60</Ability_Duration> -->
+					<!--Ability_CastingTime>5</Ability_CastingTime-->
+				</statBases>
+				<verbProperties>		
+					<verbClass>Verb_CastAbility</verbClass>
+					<range>0</range>
+					<requireLineOfSight>False</requireLineOfSight>
+					<warmupTime>0.5</warmupTime>
+					<targetParams>
+						<canTargetSelf>true</canTargetSelf>
+					</targetParams>
+				</verbProperties>
+			
+				<comps>
+					 <li Class="BigAndSmall.CompProperties_AbilityRegurgitate"/>
+				</comps>
+			</ItsSorceryFramework.SorceryDef>
+
+		<!-- Predator -->
+
+			<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+				<sorcerySchema>Isekai_Magic</sorcerySchema>
+				<defName>Tensura_Ability_Predator</defName>
+				<label>Predator</label>
+				<description>Eat your victim until death or vomit.</description>
+				<level>1</level>
+				<!--<iconPath>UI/Sorceries/hea</iconPath>-->
+				<!--warmupSound>...</warmupSound-->
+				<aiCanUse>true</aiCanUse>
+				<cooldownTicksRange>100</cooldownTicksRange>
+			
+				<statBases>
+					<Isekai_MPCost>0</Isekai_MPCost>
+					<!-- <Ability_Duration>60</Ability_Duration> -->
+					<!--Ability_CastingTime>5</Ability_CastingTime-->
+				</statBases>
+				<verbProperties>		
+					<verbClass>Verb_CastAbility</verbClass>
+					<range>1</range>
+					<requireLineOfSight>False</requireLineOfSight>
+					<warmupTime>0.5</warmupTime>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+				</verbProperties>
+			
+				<comps>
+					<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+						<!-- <noMessage>True</noMessage> -->		<!-- needed to be true for AI errors -->
+						<casterHasAnyOfHediffs>
+							<li>Tensura_Race_Slime</li>
+						</casterHasAnyOfHediffs>
+						<targetHasNoneOfHediffs>
+							<!-- <li>SHG_Radiomancer_LimitlessPotential</li> -->
+						</targetHasNoneOfHediffs>
+						<!-- <targetStatLimiters>
+							<li>
+								<stat>MoveSpeed</stat>
+								<maxStatValue>0.9</maxStatValue>
+							</li>
+						</targetStatLimiters> -->
+					</li>
+					<li Class="BigAndSmall.CompProperties_AbilityEngluf">
+						<relativeSizeThreshold>3.0</relativeSizeThreshold>
+						<dealsDamage>true</dealsDamage>
+						<internalBaseDamage>20</internalBaseDamage>
+						<selfDamageMultiplier>0.0</selfDamageMultiplier> <!--multiplier to all attack damage inflicted by objects to the stomach/torso of the user.-->
+						<!-- <healPerDay>40</healPerDay>		 -->
+						<!-- <healsScars>true</healsScars> -->
+						<!-- <canHealBrain>false</canHealBrain> -->
+						<!-- <regularHealingMultiplier>1.5</regularHealingMultiplier> -->
+						<!-- <bodyPartsRegeneratedPerDay>0.5</bodyPartsRegeneratedPerDay> -->
+						<!-- <alliesAttackBack>false</alliesAttackBack> -->
+					</li>
+				</comps>
+			</ItsSorceryFramework.SorceryDef>	
+
+	
+
+
+
+
+
+</Defs>

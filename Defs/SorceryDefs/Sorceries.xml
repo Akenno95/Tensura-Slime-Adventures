@@ -74,7 +74,110 @@
 					<applicableToMechs>False</applicableToMechs>
 				</li>
 			</comps>
-		</ItsSorceryFramework.SorceryDef>				
+		</ItsSorceryFramework.SorceryDef>
+
+
+	<!-- Xeno Change -->
+
+		<!-- Human -->
+		
+			<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+				<sorcerySchema>Isekai_Magic</sorcerySchema>
+				<defName>Tensura_Ability_XenoChange_Human</defName>
+				<label>Human change</label>
+				<description>Changing into a human visually.</description>
+				<level>5</level>
+				<!--<iconPath>UI/Sorceries/hea</iconPath>-->
+				<!--warmupSound>...</warmupSound-->
+				<aiCanUse>true</aiCanUse>
+				<cooldownTicksRange>100</cooldownTicksRange>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+				<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+				<hostile>false</hostile>
+				<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+				<targetRequired>False</targetRequired>
+			
+				<statBases>
+					<Isekai_MPCost>50</Isekai_MPCost>
+					<!-- <Ability_Duration>60</Ability_Duration> -->
+				</statBases>
+				<verbProperties>		
+					<verbClass>Verb_CastAbility</verbClass>
+					<range>0</range>
+					<!-- requireLineOfSight>True</requireLineOfSight -->
+					<warmupTime>1</warmupTime>
+					<targetParams>
+						<canTargetSelf>true</canTargetSelf>
+					</targetParams>
+				</verbProperties>
+			
+				<comps>
+					<!-- <li Class = "CompProperties_AbilityGiveHediff">
+						<compClass>CompAbilityEffect_GiveHediff</compClass>
+						<hediffDef>Isekai_XenoChange_Human</hediffDef>
+						<psychic>false</psychic>
+						<applicableToMechs>False</applicableToMechs>
+					</li> -->
+					<li Class="EBSGFramework.CompProperties_AbilityAlterGenes">
+						<alwaysAddedGenes>
+							<li>Tensura_Disguised_Slime</li>
+						</alwaysAddedGenes>
+						<alwaysRemovedGenes>
+							<li>Tensura_Disguise_Slime</li>
+						</alwaysRemovedGenes>
+				</li>
+				</comps>
+			</ItsSorceryFramework.SorceryDef>
+
+		<!-- Slime -->
+			
+			<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+				<sorcerySchema>Isekai_Magic</sorcerySchema>
+				<defName>Tensura_Ability_XenoChange_Slime</defName>
+				<label>Slime change</label>
+				<description>Changing into a slime visually.</description>
+				<level>5</level>
+				<!--<iconPath>UI/Sorceries/hea</iconPath>-->
+				<!--warmupSound>...</warmupSound-->
+				<aiCanUse>true</aiCanUse>
+				<cooldownTicksRange>100</cooldownTicksRange>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+				<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+				<hostile>false</hostile>
+				<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+				<targetRequired>False</targetRequired>
+			
+				<statBases>
+					<Isekai_MPCost>50</Isekai_MPCost>
+					<!-- <Ability_Duration>60</Ability_Duration> -->
+				</statBases>
+				<verbProperties>		
+					<verbClass>Verb_CastAbility</verbClass>
+					<range>0</range>
+					<!-- requireLineOfSight>True</requireLineOfSight -->
+					<warmupTime>1</warmupTime>
+					<targetParams>
+						<canTargetSelf>true</canTargetSelf>
+					</targetParams>
+				</verbProperties>
+			
+				<comps>
+					<!-- <li Class = "CompProperties_AbilityGiveHediff">
+						<compClass>CompAbilityEffect_GiveHediff</compClass>
+						<hediffDef>Tensura_XenoChange_Slime</hediffDef>
+						<psychic>false</psychic>
+						<applicableToMechs>False</applicableToMechs>
+					</li> -->
+					<li Class="EBSGFramework.CompProperties_AbilityAlterGenes">
+						<alwaysAddedGenes>
+							<li>Tensura_Disguise_Slime</li>
+						</alwaysAddedGenes>
+						<alwaysRemovedGenes>
+							<li>Tensura_Disguised_Slime</li>
+						</alwaysRemovedGenes>
+				</li>
+				</comps>
+			</ItsSorceryFramework.SorceryDef>		
 
 
 

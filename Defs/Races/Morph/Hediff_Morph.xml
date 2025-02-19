@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+		
+	<!-- Slime -->		
+		
+		<!-- Morph Slime -->
+			
+			<HediffDef ParentName="DiseaseBase">
+				<defName>Tensura_Morph_Slime</defName>
+				<label>Slime morphing</label>
+				<description>Morphing into a slime...</description>
+				<isBad>false</isBad>
+				<everCurableByItem>false</everCurableByItem>
+				<initialSeverity>1</initialSeverity>
+				<comps>
+					<li Class="EBSGFramework.HediffCompProperties_AlterXenotype">
+						<xenotypes>
+							<Tensura_Morph_Slime>1</Tensura_Morph_Slime>
+						</xenotypes>
+						<severities>1~999</severities>
+						<setXenotype>False</setXenotype>
+					</li>
+				</comps>
+				<stages>
+				</stages>
+			</HediffDef>
+
+
+		<!-- XenoChange Slime -->				<!-- only for visuals -->
+	
+			<HediffDef ParentName="DiseaseBase">
+				<defName>Tensura_XenoChange_Slime</defName>
+				<label>Slime morphing</label>
+				<description>Morphing into a slime...</description>
+				<isBad>false</isBad>
+				<everCurableByItem>false</everCurableByItem>
+				<initialSeverity>1</initialSeverity>
+				<comps>
+					<li Class="EBSGFramework.HediffCompProperties_AlterXenotype">
+						<xenotypes>
+							<Tensura_XenoChange_Slime>1</Tensura_XenoChange_Slime>
+						</xenotypes>
+						<severities>1~999</severities>
+						<setXenotype>False</setXenotype>
+					</li>
+				</comps>
+				<stages>
+				</stages>
+			</HediffDef>
+
+
+
+		<!-- Disguised -->
+
+			<HediffDef>
+				<defName>Tensura_Disguised_Slime</defName>
+				<label>Slime (visually)</label>
+				<description>Tremble Mortals!</description>
+				<isBad>False</isBad>
+				<everCurableByItem>false</everCurableByItem>
+				<initialSeverity>1</initialSeverity>
+
+				<hediffClass>HediffWithComps</hediffClass>
+
+				<stages>
+				</stages>
+				<comps>
+				</comps>
+				<modExtensions>
+					<li Class="BetterPrerequisites.GeneSuppressor_Hediff" MayRequire="RedMattis.BetterPrerequisites">
+						<supressedGenes>
+							<li>Tensura_Disguised_Slime</li>
+						</supressedGenes>
+					</li>
+				</modExtensions>
+			</HediffDef>
+		
+			<HediffDef ParentName="DiseaseBase">
+				<defName>Tensura_Disguise_Slime</defName>
+				<label>Human (visually)</label>
+				<description>This pawn is visually a human and hiding their original body.</description>
+				<isBad>false</isBad>
+				<everCurableByItem>false</everCurableByItem>
+				<initialSeverity>1</initialSeverity>
+				<maxSeverity>1</maxSeverity>
+				<comps>
+					<li Class="EBSGFramework.HediffCompProperties_TemporaryGenes">
+						<genesAtSeverities>
+							<li>
+								<genes>
+									<li>Tensura_Disguised_Slime</li>
+								</genes>
+								<minSeverity>0</minSeverity>
+							</li>
+						</genesAtSeverities>
+					</li>
+				</comps>
+			</HediffDef>
+
+		
+		
+		
+		
+		
+		
+		
+		
+</Defs>

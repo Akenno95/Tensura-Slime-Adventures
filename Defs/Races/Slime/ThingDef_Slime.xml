@@ -1,0 +1,131 @@
+<Defs>
+        
+
+        <!-- Note that a lot of stuff here is just for example.
+        
+        E.g. you don't need to add the Humanlike think-tree because it gets inherited from the parent human.
+        If if you _do_ want a custom thinktree, that is where you'd put it. 
+        
+        You can add basically any stat or race property from anywhere unto this. What you see below is just an example.
+        -->
+
+        <!--The BS_Alt entry is important for HAR compatibility. It will swap the ThingDef for HAR's custom thing so HAR doesn't print a giant red error.-->
+         <ThingDef ParentName="Human" BS_Alt="ThingDef_AlienRace"> 
+            <defName>Tensura_Race_Slime</defName>
+            <label>Slime</label>
+            <description>This is an intelligent slime.</description>
+            <statBases>
+            <MarketValue>500</MarketValue>
+
+            <MoveSpeed>1.0</MoveSpeed>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+            <ComfyTemperatureMax>30</ComfyTemperatureMax>
+            <!--Flammability>0</Flammability-->
+            <SM_FlirtChance>0</SM_FlirtChance>
+            <Fertility MayRequire="Ludeon.Rimworld.Biotech">0</Fertility>
+
+            <!-- Bird-brained -->
+            <GlobalLearningFactor>0.5</GlobalLearningFactor>
+            <RoyalFavorValue>0.5</RoyalFavorValue>
+            <MaxNutrition>1.0</MaxNutrition>
+            <CarryingCapacity>200</CarryingCapacity>
+            <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">200</VEF_MassCarryCapacity>
+            
+            <MeatAmount>0</MeatAmount>
+            <LeatherAmount>0</LeatherAmount>
+
+            <!-- As everyone knows Neko harpies are apparently absolutely huge? WHAT!? Are they based on Condors? -->
+            <!--SM_BodySizeMultiplier>0.7</SM_BodySizeMultiplier-->
+            </statBases>
+            <tools Inherit="False">
+                <li>
+                    <label>head</label>
+                    <capacities>
+                    <li>Blunt</li>
+                    </capacities>
+                    <power>12</power>
+                    <cooldownTime>0.5</cooldownTime>
+                    <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                    <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                    <chanceFactor>1</chanceFactor>
+                </li>
+            </tools>
+            <race>
+            <!-- These can be changed if you want custom thinktrees. -->
+            <thinkTreeMain>Humanlike</thinkTreeMain>
+            <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+            <intelligence>Humanlike</intelligence>
+            
+            <!-- Out custom body. VERY IMPORTANT! :) -->
+            <body>Tensura_Body_Slime</body>
+
+            <makesFootprints>true</makesFootprints>
+            <lifeExpectancy>2000</lifeExpectancy>
+            <nameCategory>HumanStandard</nameCategory>
+
+            <!-- I'd suggest to use SM_BodySizeMultiplier or the Cosmetic version instead of changing size here. -->
+            <baseBodySize>1</baseBodySize>
+            <baseHealthScale>1</baseHealthScale>
+            
+            <!-- They are sadly very hungry. -->
+            <baseHungerRate>0.5</baseHungerRate> 
+
+            <gestationPeriodDays>18</gestationPeriodDays>
+            
+            <canBecomeShambler>false</canBecomeShambler>
+            
+            <useMeatFrom IsNull="True"/>
+            <hasMeat>false</hasMeat>
+            <leatherDef IsNull="True"/>
+            <!--  <bloodSmearDef IsNull="True"/>
+            <bloodDef>Filth_MachineBits</bloodDef>-->
+            
+            
+            <manhunterOnDamageChance>0.01</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+
+            <!-- You can set your own hediffGivers if you don't want to let Rimworld grant the standard human hediffs. -->
+            <!-- <hediffGiverSets Inherit="False"/> -->
+            
+            <lifeStageAges Inherit="False">
+                <!-- We're not using custom defs because some Rimworld stuff is hardcoded to look for certain defs.
+                Better from a compatibility standpoint to simply make the stages exist but not be active if you must. -->
+                <!-- You can use aging rate modifiers and setting for making children be born at a higher age.-->
+                <li>
+                <def>HumanlikeBaby</def>
+                <minAge>0</minAge>
+                </li>
+                <li>
+                <def>HumanlikeChild</def>
+                <minAge>3</minAge>
+                </li>
+                <li MayRequire="Ludeon.RimWorld.Biotech">
+                <def>HumanlikePreTeenager</def>
+                <minAge>9</minAge>
+                </li>
+                <li>
+                <def>HumanlikeTeenager</def>
+                <minAge>13</minAge>
+                </li>
+                <li>
+                <def>HumanlikeAdult</def>
+                <minAge>18</minAge>
+                </li>
+            </lifeStageAges>
+            <ageGenerationCurve>
+                <points>
+                <li>(20,0)</li>
+                <li>(21,100)</li>
+                <li>(90,100)</li>
+                <li>(300,0)</li>
+                </points>
+            </ageGenerationCurve>
+            </race>
+            <modExtensions>
+                <!-- Required to get the Hediff/tracker added. -->
+                <li Class="BigAndSmall.RaceExtension">
+                    <raceHediff>Tensura_Race_Slime</raceHediff>
+                </li>
+            </modExtensions>
+        </ThingDef>
+</Defs>

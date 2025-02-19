@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+		
+	<!-- Slime -->		
+
+		<!-- Morph Slime -->
+	
+			<XenotypeDef MayRequire = "Ludeon.RimWorld.Biotech">
+				<defName>Tensura_Morph_Slime</defName>
+				<label>Slime</label>
+				<description>This pawn is an intelligent slime.</description>
+				<iconPath>RaceTextures/Slime/Slime_Body_south</iconPath>
+				
+				<combatPowerFactor>0</combatPowerFactor>
+				<inheritable>true</inheritable>
+				<factionlessGenerationWeight>0</factionlessGenerationWeight>
+				
+				<genes>
+					<li>Tensura_BodySwitch_Slime</li>
+					<li>Tensura_Gene_Slime_Head</li>
+					<li>Tensura_Gene_Slime_Body</li>
+				</genes>
+			</XenotypeDef>
+
+
+		<!-- XenoChange Slime -->				<!-- only for visuals -->
+	
+			<XenotypeDef MayRequire = "Ludeon.RimWorld.Biotech">
+				<defName>Tensura_XenoChange_Slime</defName>
+				<label>Slime</label>
+				<description>This pawn is an intelligent slime.</description>
+				<iconPath>RaceTextures/Slime/Slime_Body_south</iconPath>
+				
+				<combatPowerFactor>0</combatPowerFactor>
+				<inheritable>true</inheritable>
+				<factionlessGenerationWeight>0</factionlessGenerationWeight>
+				
+				<genes>
+					<li>Tensura_Gene_Slime_Head</li>
+					<li>Tensura_Gene_Slime_Body</li>
+				</genes>
+			</XenotypeDef>
+
+
+</Defs>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	
+	<!-- Slime -->
+
+		<!-- Slime Body -->
+
+			<GeneDef MayRequire = "Ludeon.RimWorld.Biotech">
+				<defName>Tensura_Gene_Slime_Body</defName>
+				<label>Slime Body</label>
+				<description>This is a slime body for slimes.</description>
+				
+				<biostatMet>0</biostatMet>
+				<biostatCpx>0</biostatCpx>
+				<selectionWeight>0</selectionWeight>
+				<canGenerateInGeneSet>false</canGenerateInGeneSet>
+				
+				<iconPath>RaceTextures/Slime/Slime_Body_south</iconPath>
+				<displayCategory>Tensura_Genes</displayCategory>
+				<displayOrderInCategory>200</displayOrderInCategory>
+				
+				<tattoosVisible>false</tattoosVisible>
+				<!--beardTagFilter>
+					<whitelist>true</whitelist>
+				</beardTagFilter>
+				<hairTagFilter>
+					<whitelist>true</whitelist>
+				</hairTagFilter-->
+				<exclusionTags>
+					<!--li>Jaw</li-->
+					<li>AG_Bodies</li>
+					<li>Bodies</li>
+					<li>Body</li>
+					<li>BS_Body</li>
+					<li>Fur</li>
+					<li>BodySize</li>
+				</exclusionTags>
+				<bodyType>Standard</bodyType>
+		
+				<statFactors>
+					<!--ConstructionSpeed>1.15</ConstructionSpeed>
+					<MoveSpeed>1.15</MoveSpeed-->
+					<CarryingCapacity>1.2</CarryingCapacity>
+					<!--SM_RaidWealthMultiplier>1.5</SM_RaidWealthMultiplier-->
+					<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.2</VEF_MassCarryCapacity>
+				</statFactors>
+				<statOffsets>
+					<SM_BodySizeOffset>-0.5</SM_BodySizeOffset>
+					<!-- <SM_RaidWealthOffset>-500</SM_RaidWealthOffset> -->
+					<SM_HeadSize_Cosmetic>-0.2</SM_HeadSize_Cosmetic>
+				</statOffsets>
+		
+				<modExtensions>
+					<li Class="BigAndSmall.PawnExtension">
+						<hideInGenePicker>true</hideInGenePicker>
+						<bodyPaths>
+							<Body_Female>RaceTextures/Slime/Slime_Body</Body_Female>
+							<Body_Male>RaceTextures/Slime/Slime_Body</Body_Male>
+						</bodyPaths>
+						<bodyMaterial>
+							<shader>CutoutComplex</shader>
+							<overrideDesiccated>true</overrideDesiccated>
+							<colorA>
+								<hairColor>true</hairColor>
+								<alts>
+									<li>
+										<triggers><li>HasForcedSkinColorGene</li></triggers>
+										<skinColor>true</skinColor>
+									</li>
+								</alts>
+							</colorA>
+							<!-- <colorB>
+								<ideologyColor>true</ideologyColor>
+								<alts>
+									<li>
+										<triggers><li>HasForcedSkinColorGene</li></triggers>
+										<hairColor>true</hairColor>
+									</li>
+								</alts>
+							</colorB> -->
+						</bodyMaterial>
+						<apparelRestrictions>
+							<apparelLayers>
+								<whitelist>
+							
+								</whitelist>
+							</apparelLayers>
+						</apparelRestrictions>
+					</li>
+				</modExtensions>
+			</GeneDef>
+	
+	
+		<!-- Slime Head -->
+	
+			<GeneDef MayRequire = "Ludeon.RimWorld.Biotech">
+				<defName>Tensura_Gene_Slime_Head</defName>
+				<label>Slime Head</label>
+				<description>This is a slime head for slimes.</description>
+				
+				<biostatMet>0</biostatMet>
+				<biostatCpx>0</biostatCpx>
+				<selectionWeight>0</selectionWeight>
+				<canGenerateInGeneSet>false</canGenerateInGeneSet>
+				
+				<iconPath>RaceTextures/Slime/Slime_Head_south</iconPath>
+				<displayCategory>Tensura_Genes</displayCategory>
+				<displayOrderInCategory>201</displayOrderInCategory>
+			
+				<tattoosVisible>false</tattoosVisible>
+				<beardTagFilter>
+					<whitelist>true</whitelist>
+				</beardTagFilter>
+				<hairTagFilter>
+					<whitelist>true</whitelist>
+				</hairTagFilter>
+				<exclusionTags>
+					<li>Jaw</li>
+					<!-- <li>HairStyle</li>
+					<li>BeardStyle</li> -->
+					<!--li>AG_Bodies</li>
+					<li>Bodies</li>
+					<li>Body</li>
+					<li>BS_Body</li>
+					<li>Fur</li-->
+				</exclusionTags>
+				<bodyType>Standard</bodyType>
+			
+				<statOffsets>
+					<!--SM_BodySizeOffset>-0.5</SM_BodySizeOffset>
+					<SM_RaidWealthOffset>-500</SM_RaidWealthOffset-->
+					<!--SM_HeadSize_Cosmetic>-0.25</SM_HeadSize_Cosmetic-->
+				</statOffsets>
+		
+				<modExtensions>
+					<li Class="BigAndSmall.PawnExtension">
+						<hideInGenePicker>true</hideInGenePicker>
+						<disableFacialAnimations>true</disableFacialAnimations>
+						<headPaths>
+							<Female>RaceTextures/Slime/Slime_Head</Female>
+							<Male>RaceTextures/Slime/Slime_Head</Male>
+						</headPaths>
+						<!--headMaterial>
+							<shader>CutoutComplex</shader>
+							<overrideDesiccated>true</overrideDesiccated>
+							<colorA>
+								<hairColor>true</hairColor>
+								<alts>
+								<li>
+									<triggers><li>HasForcedSkinColorGene</li></triggers>
+									<skinColor>true</skinColor>
+								</li>
+								</alts>
+							</colorA>
+							<colorB>
+								<ideologyColor>true</ideologyColor>
+								<alts>
+								<li>
+									<triggers><li>HasForcedSkinColorGene</li></triggers>
+									<hairColor>true</hairColor>
+								</li>
+								</alts>
+							</colorB>
+						</headMaterial-->
+						<apparelRestrictions>
+							<apparelLayers>
+								<whitelist>
+								
+								</whitelist>
+							</apparelLayers>
+						</apparelRestrictions>
+						<!--bodyConstantHeadScaleBigOnly>true</bodyConstantHeadScaleBigOnly>
+						<preventHeadScalingFactor>0.3</preventHeadScalingFactor-->
+						<facialDisabler />
+				
+						<!-- left = horizontal  + = right  - = left / / right = vertical  + = up  - = down -->
+						<headDrawData>
+							<dataSouth>
+								<offset>(0.0, 0, -0.1)</offset>	
+							</dataSouth>
+							<dataEast>
+								<offset>(0.5, 0, -0.1)</offset>
+							</dataEast>
+							<dataWest>
+								<offset>(-0.5, 0, -0.1)</offset>
+							</dataWest>
+						</headDrawData>
+					</li>
+				<!--li Class="BetterPrerequisites.GeneExtension">
+					<headPosMultiplier>-2.5</headPosMultiplier>
+				</li-->	
+				
+				</modExtensions>
+			</GeneDef>
+
+
+		<!-- Rimuru Body -->
+
+			<GeneDef MayRequire = "Ludeon.RimWorld.Biotech">
+				<defName>Tensura_Gene_Rimuru_Body</defName>
+				<label>Rimuru Body</label>
+				<description>This is the body of Rimuru Tempest.</description>
+				
+				<biostatMet>0</biostatMet>
+				<biostatCpx>0</biostatCpx>
+				<selectionWeight>0</selectionWeight>
+				<canGenerateInGeneSet>false</canGenerateInGeneSet>
+				
+				<iconPath>RaceTextures/Slime/Rimuru_Body</iconPath>
+				<displayCategory>Tensura_Genes</displayCategory>
+				<displayOrderInCategory>202</displayOrderInCategory>
+				
+				<tattoosVisible>false</tattoosVisible>
+				<!--beardTagFilter>
+					<whitelist>true</whitelist>
+				</beardTagFilter>
+				<hairTagFilter>
+					<whitelist>true</whitelist>
+				</hairTagFilter-->
+				<exclusionTags>
+					<!--li>Jaw</li-->
+					<li>AG_Bodies</li>
+					<li>Bodies</li>
+					<li>Body</li>
+					<li>BS_Body</li>
+					<li>Fur</li>
+					<li>BodySize</li>
+				</exclusionTags>
+				<bodyType>Standard</bodyType>
+		
+				<statFactors>
+					<!--ConstructionSpeed>1.15</ConstructionSpeed>
+					<MoveSpeed>1.15</MoveSpeed-->
+					<CarryingCapacity>1.2</CarryingCapacity>
+					<!--SM_RaidWealthMultiplier>1.5</SM_RaidWealthMultiplier-->
+					<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.2</VEF_MassCarryCapacity>
+				</statFactors>
+				<statOffsets>
+					<SM_BodySizeOffset>-0.5</SM_BodySizeOffset>
+					<!-- <SM_RaidWealthOffset>-500</SM_RaidWealthOffset> -->
+					<SM_HeadSize_Cosmetic>-0.2</SM_HeadSize_Cosmetic>
+				</statOffsets>
+		
+				<modExtensions>
+					<li Class="BigAndSmall.PawnExtension">
+						<hideInGenePicker>true</hideInGenePicker>
+						<bodyPaths>
+							<Body_Female>RaceTextures/Slime/Rimuru_Body</Body_Female>
+							<Body_Male>RaceTextures/Slime/Rimuru_Body</Body_Male>
+						</bodyPaths>
+						<bodyMaterial>
+							<overrideDesiccated>true</overrideDesiccated>
+						</bodyMaterial>
+						<apparelRestrictions>
+							<bodyPartGroups>
+								<whitelist>
+								
+								</whitelist>
+							</bodyPartGroups>
+						</apparelRestrictions>
+					</li>
+				</modExtensions>
+			</GeneDef>
+
+
+
+
+</Defs>
