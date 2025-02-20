@@ -65,7 +65,7 @@
 						</li>
 					</capMods>
 			
-					<makeImmuneTo>
+					<!-- <makeImmuneTo>
 						<li>SandInEyes</li>
 						<li>DirtInEyes</li>
 						<li>MudInEyes</li>
@@ -96,7 +96,7 @@
 						<li>BadBack</li>
 						<li>Carcinoma</li>
 						<li>HeartAttack</li>
-					</makeImmuneTo>
+					</makeImmuneTo> -->
 				</li>
 				<li>
 					<label>Demon Slime</label>
@@ -131,7 +131,7 @@
 						</li>
 					</capMods>
 
-					<makeImmuneTo>
+					<!-- <makeImmuneTo>
 						<li>SandInEyes</li>
 						<li>DirtInEyes</li>
 						<li>MudInEyes</li>
@@ -162,7 +162,7 @@
 						<li>BadBack</li>
 						<li>Carcinoma</li>
 						<li>HeartAttack</li>
-					</makeImmuneTo>
+					</makeImmuneTo> -->
 				</li>
 			</stages>
 

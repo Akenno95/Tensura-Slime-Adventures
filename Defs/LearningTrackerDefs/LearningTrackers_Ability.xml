@@ -56,6 +56,11 @@
 				<abilityGain>
 					<li>Tensura_Ability_Predator</li>
 					<li>Tensura_Ability_Release</li>
+					<li>Tensura_Ability_PredatorHeal</li>
+					<li>Tensura_Ability_Gluttony</li>
+					<li>Tensura_Ability_GluttonyHeal</li>
+					<li>Tensura_Ability_Beelzebub</li>
+					<li>Tensura_Ability_BeelzebubHeal</li>
 				</abilityGain>
 			</ItsSorceryFramework.LearningTreeNodeDef>
 

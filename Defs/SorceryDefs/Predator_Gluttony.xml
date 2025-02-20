@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	
-	<!-- Engulf -->
+	<!-- Engulf / Predator etc -->
 
 		<!-- Throw-Up -->
 
@@ -61,8 +61,8 @@
 				</statBases>
 				<verbProperties>		
 					<verbClass>Verb_CastAbility</verbClass>
-					<range>1</range>
-					<requireLineOfSight>False</requireLineOfSight>
+					<range>2</range>
+					<requireLineOfSight>True</requireLineOfSight>
 					<warmupTime>0.5</warmupTime>
 					<targetParams>
 						<canTargetLocations>true</canTargetLocations>
@@ -71,7 +71,7 @@
 			
 				<comps>
 					<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
-						<!-- <noMessage>True</noMessage> -->		<!-- needed to be true for AI errors -->
+						<!-- <noMessage>True</noMessage> -->		<!-- needed to be true for AI errors // Activate if AI use it -->
 						<casterHasAnyOfHediffs>
 							<li>Tensura_Race_Slime</li>
 						</casterHasAnyOfHediffs>
@@ -98,7 +98,321 @@
 						<!-- <alliesAttackBack>false</alliesAttackBack> -->
 					</li>
 				</comps>
-			</ItsSorceryFramework.SorceryDef>	
+			</ItsSorceryFramework.SorceryDef>
+
+		<!-- Predator Heal -->
+
+			<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+				<sorcerySchema>Isekai_Magic</sorcerySchema>
+				<defName>Tensura_Ability_PredatorHeal</defName>
+				<label>Predator (Heal)</label>
+				<description>Eat your victim and heal it.</description>
+				<level>1</level>
+				<!--<iconPath>UI/Sorceries/hea</iconPath>-->
+				<!--warmupSound>...</warmupSound-->
+				<aiCanUse>true</aiCanUse>
+				<cooldownTicksRange>100</cooldownTicksRange>
+				<hostile>false</hostile>
+				<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+				<targetRequired>False</targetRequired>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+				<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+			
+				<statBases>
+					<Isekai_MPCost>0</Isekai_MPCost>
+					<!-- <Ability_Duration>60</Ability_Duration> -->
+					<!--Ability_CastingTime>5</Ability_CastingTime-->
+				</statBases>
+				<verbProperties>		
+					<verbClass>Verb_CastAbility</verbClass>
+					<range>2</range>
+					<requireLineOfSight>True</requireLineOfSight>
+					<warmupTime>0.5</warmupTime>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+				</verbProperties>
+			
+				<comps>
+					<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+						<!-- <noMessage>True</noMessage> -->		<!-- needed to be true for AI errors // Activate if AI use it -->
+						<casterHasAnyOfHediffs>
+							<li>Tensura_Race_Slime</li>
+						</casterHasAnyOfHediffs>
+						<targetHasNoneOfHediffs>
+							<!-- <li>SHG_Radiomancer_LimitlessPotential</li> -->
+						</targetHasNoneOfHediffs>
+						<!-- <targetStatLimiters>
+							<li>
+								<stat>MoveSpeed</stat>
+								<maxStatValue>0.9</maxStatValue>
+							</li>
+						</targetStatLimiters> -->
+					</li>
+					<li Class="BigAndSmall.CompProperties_AbilityEngluf">
+						<relativeSizeThreshold>3.0</relativeSizeThreshold>
+						<dealsDamage>false</dealsDamage>
+						<!-- <internalBaseDamage>20</internalBaseDamage> -->
+						<selfDamageMultiplier>0.0</selfDamageMultiplier> <!--multiplier to all attack damage inflicted by objects to the stomach/torso of the user.-->
+						<healPerDay>50</healPerDay>		
+						<healsScars>true</healsScars>
+						<canHealBrain>false</canHealBrain>
+						<regularHealingMultiplier>2.0</regularHealingMultiplier>
+						<bodyPartsRegeneratedPerDay>1.0</bodyPartsRegeneratedPerDay>
+						<alliesAttackBack>false</alliesAttackBack>
+					</li>
+				</comps>
+			</ItsSorceryFramework.SorceryDef>
+
+		<!-- Gluttony -->
+
+			<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+				<sorcerySchema>Isekai_Magic</sorcerySchema>
+				<defName>Tensura_Ability_Gluttony</defName>
+				<label>Gluttony</label>
+				<description>Eat your victim until death or vomit. Enhanced ability from Predator with special features.</description>
+				<level>1</level>
+				<!--<iconPath>UI/Sorceries/hea</iconPath>-->
+				<!--warmupSound>...</warmupSound-->
+				<aiCanUse>true</aiCanUse>
+				<cooldownTicksRange>100</cooldownTicksRange>
+			
+				<statBases>
+					<Isekai_MPCost>0</Isekai_MPCost>
+					<!-- <Ability_Duration>60</Ability_Duration> -->
+					<!--Ability_CastingTime>5</Ability_CastingTime-->
+				</statBases>
+				<verbProperties>		
+					<verbClass>Verb_CastAbility</verbClass>
+					<range>7</range>
+					<requireLineOfSight>True</requireLineOfSight>
+					<warmupTime>0.5</warmupTime>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+						<canTargetBuildings>true</canTargetBuildings>
+					</targetParams>
+				</verbProperties>
+			
+				<comps>
+					<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+						<!-- <noMessage>True</noMessage> -->		<!-- needed to be true for AI errors // Activate if AI use it -->
+						<casterHasAnyOfHediffs>
+							<li>Tensura_Race_Slime</li>
+						</casterHasAnyOfHediffs>
+						<targetHasNoneOfHediffs>
+							<!-- <li>SHG_Radiomancer_LimitlessPotential</li> -->
+						</targetHasNoneOfHediffs>
+						<!-- <targetStatLimiters>
+							<li>
+								<stat>MoveSpeed</stat>
+								<maxStatValue>0.9</maxStatValue>
+							</li>
+						</targetStatLimiters> -->
+					</li>
+					<li Class="BigAndSmall.CompProperties_AbilityEngluf">
+						<relativeSizeThreshold>6.0</relativeSizeThreshold>
+						<dealsDamage>true</dealsDamage>
+						<internalBaseDamage>50</internalBaseDamage>
+						<selfDamageMultiplier>0.0</selfDamageMultiplier> <!--multiplier to all attack damage inflicted by objects to the stomach/torso of the user.-->
+						<!-- <healPerDay>40</healPerDay>		 -->
+						<!-- <healsScars>true</healsScars> -->
+						<!-- <canHealBrain>false</canHealBrain> -->
+						<!-- <regularHealingMultiplier>1.5</regularHealingMultiplier> -->
+						<!-- <bodyPartsRegeneratedPerDay>0.5</bodyPartsRegeneratedPerDay> -->
+						<!-- <alliesAttackBack>false</alliesAttackBack> -->
+					</li>
+				</comps>
+			</ItsSorceryFramework.SorceryDef>
+
+		<!-- Gluttony Heal -->
+
+			<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+				<sorcerySchema>Isekai_Magic</sorcerySchema>
+				<defName>Tensura_Ability_GluttonyHeal</defName>
+				<label>Gluttony (Heal)</label>
+				<description>Eat your victim and heal it. Enhanced ability from Predator with special features.</description>
+				<level>1</level>
+				<!--<iconPath>UI/Sorceries/hea</iconPath>-->
+				<!--warmupSound>...</warmupSound-->
+				<aiCanUse>true</aiCanUse>
+				<cooldownTicksRange>100</cooldownTicksRange>
+				<hostile>false</hostile>
+				<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+				<targetRequired>False</targetRequired>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+				<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+			
+				<statBases>
+					<Isekai_MPCost>0</Isekai_MPCost>
+					<!-- <Ability_Duration>60</Ability_Duration> -->
+					<!--Ability_CastingTime>5</Ability_CastingTime-->
+				</statBases>
+				<verbProperties>		
+					<verbClass>Verb_CastAbility</verbClass>
+					<range>7</range>
+					<requireLineOfSight>True</requireLineOfSight>
+					<warmupTime>0.5</warmupTime>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+						<canTargetBuildings>true</canTargetBuildings>
+					</targetParams>
+				</verbProperties>
+			
+				<comps>
+					<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+						<!-- <noMessage>True</noMessage> -->		<!-- needed to be true for AI errors // Activate if AI use it -->
+						<casterHasAnyOfHediffs>
+							<li>Tensura_Race_Slime</li>
+						</casterHasAnyOfHediffs>
+						<targetHasNoneOfHediffs>
+							<!-- <li>SHG_Radiomancer_LimitlessPotential</li> -->
+						</targetHasNoneOfHediffs>
+						<!-- <targetStatLimiters>
+							<li>
+								<stat>MoveSpeed</stat>
+								<maxStatValue>0.9</maxStatValue>
+							</li>
+						</targetStatLimiters> -->
+					</li>
+					<li Class="BigAndSmall.CompProperties_AbilityEngluf">
+						<relativeSizeThreshold>6.0</relativeSizeThreshold>
+						<dealsDamage>false</dealsDamage>
+						<!-- <internalBaseDamage>50</internalBaseDamage> -->
+						<selfDamageMultiplier>0.0</selfDamageMultiplier> <!--multiplier to all attack damage inflicted by objects to the stomach/torso of the user.-->
+						<healPerDay>100</healPerDay>		
+						<healsScars>true</healsScars>
+						<canHealBrain>false</canHealBrain>
+						<regularHealingMultiplier>5.0</regularHealingMultiplier>
+						<bodyPartsRegeneratedPerDay>2.0</bodyPartsRegeneratedPerDay>
+						<alliesAttackBack>false</alliesAttackBack>
+					</li>
+				</comps>
+			</ItsSorceryFramework.SorceryDef>
+
+		<!-- Beelzebub / Lord of Gluttony -->
+
+			<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+				<sorcerySchema>Isekai_Magic</sorcerySchema>
+				<defName>Tensura_Ability_Beelzebub</defName>
+				<label>Beelzebub</label>
+				<description>Eat your victim until death or vomit. Enhanced ability from Gluttony with special features. This ability is also known as Lord of Gluttony.</description>
+				<level>1</level>
+				<!--<iconPath>UI/Sorceries/hea</iconPath>-->
+				<!--warmupSound>...</warmupSound-->
+				<aiCanUse>true</aiCanUse>
+				<cooldownTicksRange>100</cooldownTicksRange>
+			
+				<statBases>
+					<Isekai_MPCost>0</Isekai_MPCost>
+					<!-- <Ability_Duration>60</Ability_Duration> -->
+					<!--Ability_CastingTime>5</Ability_CastingTime-->
+				</statBases>
+				<verbProperties>		
+					<verbClass>Verb_CastAbility</verbClass>
+					<range>15</range>
+					<requireLineOfSight>True</requireLineOfSight>
+					<warmupTime>0.5</warmupTime>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+						<canTargetBuildings>true</canTargetBuildings>
+					</targetParams>
+				</verbProperties>
+			
+				<comps>
+					<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+						<!-- <noMessage>True</noMessage> -->		<!-- needed to be true for AI errors // Activate if AI use it -->
+						<casterHasAnyOfHediffs>
+							<li>Tensura_Race_Slime</li>
+						</casterHasAnyOfHediffs>
+						<targetHasNoneOfHediffs>
+							<!-- <li>SHG_Radiomancer_LimitlessPotential</li> -->
+						</targetHasNoneOfHediffs>
+						<!-- <targetStatLimiters>
+							<li>
+								<stat>MoveSpeed</stat>
+								<maxStatValue>0.9</maxStatValue>
+							</li>
+						</targetStatLimiters> -->
+					</li>
+					<li Class="BigAndSmall.CompProperties_AbilityEngluf">
+						<relativeSizeThreshold>50.0</relativeSizeThreshold>
+						<dealsDamage>true</dealsDamage>
+						<internalBaseDamage>500</internalBaseDamage>
+						<selfDamageMultiplier>0.0</selfDamageMultiplier> <!--multiplier to all attack damage inflicted by objects to the stomach/torso of the user.-->
+						<!-- <healPerDay>40</healPerDay>		 -->
+						<!-- <healsScars>true</healsScars> -->
+						<!-- <canHealBrain>false</canHealBrain> -->
+						<!-- <regularHealingMultiplier>1.5</regularHealingMultiplier> -->
+						<!-- <bodyPartsRegeneratedPerDay>0.5</bodyPartsRegeneratedPerDay> -->
+						<!-- <alliesAttackBack>false</alliesAttackBack> -->
+					</li>
+				</comps>
+			</ItsSorceryFramework.SorceryDef>
+
+		<!-- Beelzebub Heal -->
+
+			<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+				<sorcerySchema>Isekai_Magic</sorcerySchema>
+				<defName>Tensura_Ability_BeelzebubHeal</defName>
+				<label>Beelzebub (Heal)</label>
+				<description>Eat your victim and heal it. Enhanced ability from Gluttony with special features. This ability is also known as Lord of Gluttony.</description>
+				<level>1</level>
+				<!--<iconPath>UI/Sorceries/hea</iconPath>-->
+				<!--warmupSound>...</warmupSound-->
+				<aiCanUse>true</aiCanUse>
+				<cooldownTicksRange>100</cooldownTicksRange>
+				<hostile>false</hostile>
+				<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+				<targetRequired>False</targetRequired>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+				<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+			
+				<statBases>
+					<Isekai_MPCost>0</Isekai_MPCost>
+					<!-- <Ability_Duration>60</Ability_Duration> -->
+					<!--Ability_CastingTime>5</Ability_CastingTime-->
+				</statBases>
+				<verbProperties>		
+					<verbClass>Verb_CastAbility</verbClass>
+					<range>15</range>
+					<requireLineOfSight>True</requireLineOfSight>
+					<warmupTime>0.5</warmupTime>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+						<canTargetBuildings>true</canTargetBuildings>
+					</targetParams>
+				</verbProperties>
+			
+				<comps>
+					<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+						<!-- <noMessage>True</noMessage> -->		<!-- needed to be true for AI errors // Activate if AI use it -->
+						<casterHasAnyOfHediffs>
+							<li>Tensura_Race_Slime</li>
+						</casterHasAnyOfHediffs>
+						<targetHasNoneOfHediffs>
+							<!-- <li>SHG_Radiomancer_LimitlessPotential</li> -->
+						</targetHasNoneOfHediffs>
+						<!-- <targetStatLimiters>
+							<li>
+								<stat>MoveSpeed</stat>
+								<maxStatValue>0.9</maxStatValue>
+							</li>
+						</targetStatLimiters> -->
+					</li>
+					<li Class="BigAndSmall.CompProperties_AbilityEngluf">
+						<relativeSizeThreshold>50.0</relativeSizeThreshold>
+						<dealsDamage>false</dealsDamage>
+						<!-- <internalBaseDamage>50</internalBaseDamage> -->
+						<selfDamageMultiplier>0.0</selfDamageMultiplier> <!--multiplier to all attack damage inflicted by objects to the stomach/torso of the user.-->
+						<healPerDay>1000</healPerDay>		
+						<healsScars>true</healsScars>
+						<canHealBrain>true</canHealBrain>
+						<regularHealingMultiplier>50.0</regularHealingMultiplier>
+						<bodyPartsRegeneratedPerDay>20.0</bodyPartsRegeneratedPerDay>
+						<alliesAttackBack>false</alliesAttackBack>
+					</li>
+				</comps>
+			</ItsSorceryFramework.SorceryDef>
 
 	
 
