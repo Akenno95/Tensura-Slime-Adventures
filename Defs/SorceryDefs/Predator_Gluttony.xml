@@ -97,6 +97,9 @@
 						<!-- <bodyPartsRegeneratedPerDay>0.5</bodyPartsRegeneratedPerDay> -->
 						<!-- <alliesAttackBack>false</alliesAttackBack> -->
 					</li>
+					<li Class="CompProperties_AbilityFleckOnTarget">
+						<fleckDef>PsycastPsychicEffect</fleckDef>
+					</li>
 				</comps>
 			</ItsSorceryFramework.SorceryDef>
 
@@ -114,7 +117,7 @@
 				<cooldownTicksRange>100</cooldownTicksRange>
 				<hostile>false</hostile>
 				<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-				<targetRequired>False</targetRequired>
+				<!-- <targetRequired>False</targetRequired> -->
 				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 				<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 			
@@ -160,6 +163,9 @@
 						<regularHealingMultiplier>2.0</regularHealingMultiplier>
 						<bodyPartsRegeneratedPerDay>1.0</bodyPartsRegeneratedPerDay>
 						<alliesAttackBack>false</alliesAttackBack>
+					</li>
+					<li Class="CompProperties_AbilityFleckOnTarget">
+						<fleckDef>PsycastPsychicEffect</fleckDef>
 					</li>
 				</comps>
 			</ItsSorceryFramework.SorceryDef>
@@ -221,6 +227,9 @@
 						<!-- <bodyPartsRegeneratedPerDay>0.5</bodyPartsRegeneratedPerDay> -->
 						<!-- <alliesAttackBack>false</alliesAttackBack> -->
 					</li>
+					<li Class="CompProperties_AbilityFleckOnTarget">
+						<fleckDef>PsycastPsychicEffect</fleckDef>
+					</li>
 				</comps>
 			</ItsSorceryFramework.SorceryDef>
 
@@ -238,7 +247,7 @@
 				<cooldownTicksRange>100</cooldownTicksRange>
 				<hostile>false</hostile>
 				<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-				<targetRequired>False</targetRequired>
+				<!-- <targetRequired>False</targetRequired> -->
 				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 				<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 			
@@ -285,6 +294,9 @@
 						<regularHealingMultiplier>5.0</regularHealingMultiplier>
 						<bodyPartsRegeneratedPerDay>2.0</bodyPartsRegeneratedPerDay>
 						<alliesAttackBack>false</alliesAttackBack>
+					</li>
+					<li Class="CompProperties_AbilityFleckOnTarget">
+						<fleckDef>PsycastPsychicEffect</fleckDef>
 					</li>
 				</comps>
 			</ItsSorceryFramework.SorceryDef>
@@ -346,6 +358,9 @@
 						<!-- <bodyPartsRegeneratedPerDay>0.5</bodyPartsRegeneratedPerDay> -->
 						<!-- <alliesAttackBack>false</alliesAttackBack> -->
 					</li>
+					<li Class="CompProperties_AbilityFleckOnTarget">
+						<fleckDef>PsycastPsychicEffect</fleckDef>
+					</li>
 				</comps>
 			</ItsSorceryFramework.SorceryDef>
 
@@ -363,7 +378,7 @@
 				<cooldownTicksRange>100</cooldownTicksRange>
 				<hostile>false</hostile>
 				<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-				<targetRequired>False</targetRequired>
+				<!-- <targetRequired>False</targetRequired> -->
 				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 				<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 			
@@ -410,6 +425,9 @@
 						<regularHealingMultiplier>50.0</regularHealingMultiplier>
 						<bodyPartsRegeneratedPerDay>20.0</bodyPartsRegeneratedPerDay>
 						<alliesAttackBack>false</alliesAttackBack>
+					</li>
+					<li Class="CompProperties_AbilityFleckOnTarget">
+						<fleckDef>PsycastPsychicEffect</fleckDef>
 					</li>
 				</comps>
 			</ItsSorceryFramework.SorceryDef>
