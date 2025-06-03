@@ -21,10 +21,11 @@
 				<coordX>0</coordX>
 				<coordY>0</coordY>
 				<pointReq>1</pointReq>
-				
-				<prereqs>
+
+				<prereqNodes>
 					<!--li>Isekai_Node_SlashAbility</li-->
-				</prereqs>
+				</prereqNodes>
+				<prereqNodeMode>All</prereqNodeMode>
 				
 				<statOffsets>
 					<ArmorRating_Heat>10.0</ArmorRating_Heat>
@@ -45,10 +46,11 @@
 				<coordX>0</coordX>
 				<coordY>1</coordY>
 				<pointReq>1</pointReq>
-				
-				<prereqs>
+
+				<prereqNodes>
 					<!--li>Isekai_Node_SlashAbility</li-->
-				</prereqs>
+				</prereqNodes>
+				<prereqNodeMode>All</prereqNodeMode>
 				
 				<statOffsets>
 					<ArmorRating_Heat>10.0</ArmorRating_Heat>
@@ -76,11 +78,12 @@
 				<coordX>0</coordX>
 				<coordY>2</coordY>
 				<pointReq>1</pointReq>
-				
-				<prereqs>
+
+				<prereqNodes>
 					<!--li>Isekai_Node_SlashAbility</li-->
-				</prereqs>
-				
+				</prereqNodes>
+				<prereqNodeMode>All</prereqNodeMode>
+
 				<statOffsets>
 					<ArmorRating_Heat>10.0</ArmorRating_Heat>
 				</statOffsets>
@@ -98,10 +101,11 @@
 				<coordX>0</coordX>
 				<coordY>3</coordY>
 				<pointReq>1</pointReq>
-				
-				<prereqs>
+
+				<prereqNodes>
 					<!--li>Isekai_Node_SlashAbility</li-->
-				</prereqs>
+				</prereqNodes>
+				<prereqNodeMode>All</prereqNodeMode>
 				
 				<statOffsets>
 					<ArmorRating_Heat>10.0</ArmorRating_Heat>

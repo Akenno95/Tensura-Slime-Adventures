@@ -70,15 +70,15 @@
 									</li>
 								</alts>
 							</colorA>
-							<!-- <colorB>
-								<ideologyColor>true</ideologyColor>
+							<colorB>
+								<hairColor>true</hairColor>
 								<alts>
 									<li>
 										<triggers><li>HasForcedSkinColorGene</li></triggers>
-										<hairColor>true</hairColor>
+										<skinColor>true</skinColor>
 									</li>
 								</alts>
-							</colorB> -->
+							</colorB>
 						</bodyMaterial>
 						<apparelRestrictions>
 							<apparelLayers>

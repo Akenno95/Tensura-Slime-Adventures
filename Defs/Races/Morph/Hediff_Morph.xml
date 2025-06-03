@@ -91,7 +91,7 @@
 								<genes>
 									<li>Tensura_Disguised_Slime</li>
 								</genes>
-								<minSeverity>0</minSeverity>
+								<validSeverity>0</validSeverity>
 							</li>
 						</genesAtSeverities>
 					</li>

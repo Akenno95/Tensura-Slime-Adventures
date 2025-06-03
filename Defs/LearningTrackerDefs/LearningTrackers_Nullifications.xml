@@ -22,10 +22,11 @@
 				<coordY>0</coordY>
 				<pointReq>10</pointReq>
 				
-				<prereqs>
+				<prereqNodes>
 					<li>Isekai_Resistances_Node_BluntResistance5</li>
 					<li>Isekai_Resistances_Node_SharpResistance5</li>
-				</prereqs>
+				</prereqNodes>
+				<prereqNodeMode>All</prereqNodeMode>
 				
 				<statOffsets>
 					<ArmorRating_Blunt>10.0</ArmorRating_Blunt>
@@ -59,11 +60,12 @@
 				<coordX>0</coordX>
 				<coordY>2</coordY>
 				<pointReq>10</pointReq>
-				
-				<prereqs>
+
+				<prereqNodes>
 					<li>Isekai_Resistances_Node_HeatResistance5</li>
-				</prereqs>
-				
+				</prereqNodes>
+				<prereqNodeMode>All</prereqNodeMode>
+
 				<statOffsets>
 					<ArmorRating_Heat>10.0</ArmorRating_Heat>
 				</statOffsets>
@@ -79,11 +81,12 @@
 				<coordX>0</coordX>
 				<coordY>3</coordY>
 				<pointReq>10</pointReq>
-				
-				<prereqs>
+
+				<prereqNodes>
 					<li>Isekai_Resistances_Node_PainResistance5</li>
-				</prereqs>
-				
+				</prereqNodes>
+				<prereqNodeMode>All</prereqNodeMode>
+
 				<hediffRemove>
 					<li>Isekai_Pain_Resistance</li>
 				</hediffRemove>
@@ -102,10 +105,11 @@
 				<coordX>0</coordX>
 				<coordY>4</coordY>
 				<pointReq>10</pointReq>
-				
-				<prereqs>
+
+				<prereqNodes>
 					<li>Isekai_Resistances_Node_StaggerResistance5</li>
-				</prereqs>
+				</prereqNodes>
+				<prereqNodeMode>All</prereqNodeMode>
 				
 				<hediffRemove>
 					<li>Isekai_Stagger_Resistance</li>
