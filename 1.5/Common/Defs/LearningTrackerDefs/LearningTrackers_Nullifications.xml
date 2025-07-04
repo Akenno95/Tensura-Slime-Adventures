@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Setup -->
+		
+			<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
+				<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
+				<defName>Tensura_Nullifications_LearningTrackerTree</defName>
+				<label>Nullifications</label>
+			</ItsSorceryFramework.LearningTrackerDef>
+		
+		
+	<!-- Nullifications Skilltree -->
+
+			<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+				<learningTrackerDef>Tensura_Nullifications_LearningTrackerTree</learningTrackerDef>
+				<defName>Tensura_Node_PhysicalNullification</defName>
+				<label>Physical Damage Nullification</label>
+				<description>You can nullify physical damage.</description>
+				
+				<coordX>0</coordX>
+				<coordY>0</coordY>
+				<pointReq>10</pointReq>
+				
+				<prereqNodes>
+					<li>Isekai_Resistances_Node_BluntResistance5</li>
+					<li>Isekai_Resistances_Node_SharpResistance5</li>
+				</prereqNodes>
+				<prereqNodeMode>All</prereqNodeMode>
+				
+				<statOffsets>
+					<ArmorRating_Blunt>10.0</ArmorRating_Blunt>
+					<ArmorRating_Sharp>10.0</ArmorRating_Sharp>
+				</statOffsets>
+			</ItsSorceryFramework.LearningTreeNodeDef>
+
+
+			<!--ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+				<learningTrackerDef>Tensura_Nullifications_LearningTrackerTree</learningTrackerDef>
+				<defName>Tensura_Node_SharpNullification</defName>
+				<label>Sharp Damage Nullification</label>
+				<description>You can lower down the sharp damage you receive with this ability.</description>
+				
+				<coordX>0</coordX>
+				<coordY>1</coordY>
+				<pointReq>1</pointReq>
+				
+				<statOffsets>
+					<ArmorRating_Sharp>10.0</ArmorRating_Sharp>
+				</statOffsets>
+			</ItsSorceryFramework.LearningTreeNodeDef-->
+			
+			
+			<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+				<learningTrackerDef>Tensura_Nullifications_LearningTrackerTree</learningTrackerDef>
+				<defName>Tensura_Node_HeatNullification</defName>
+				<label>Heat Damage Nullification</label>
+				<description>You can nullify heat damage.</description>
+				
+				<coordX>0</coordX>
+				<coordY>2</coordY>
+				<pointReq>10</pointReq>
+
+				<prereqNodes>
+					<li>Isekai_Resistances_Node_HeatResistance5</li>
+				</prereqNodes>
+				<prereqNodeMode>All</prereqNodeMode>
+
+				<statOffsets>
+					<ArmorRating_Heat>10.0</ArmorRating_Heat>
+				</statOffsets>
+			</ItsSorceryFramework.LearningTreeNodeDef>
+			
+			
+			<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+				<learningTrackerDef>Tensura_Nullifications_LearningTrackerTree</learningTrackerDef>
+				<defName>Tensura_Node_PainNullification</defName>
+				<label>Pain Nullification</label>
+				<description>You can nullify pain.</description>
+				
+				<coordX>0</coordX>
+				<coordY>3</coordY>
+				<pointReq>10</pointReq>
+
+				<prereqNodes>
+					<li>Isekai_Resistances_Node_PainResistance5</li>
+				</prereqNodes>
+				<prereqNodeMode>All</prereqNodeMode>
+
+				<hediffRemove>
+					<li>Isekai_Pain_Resistance</li>
+				</hediffRemove>
+				<hediffAdd>
+					<li><hediffDef>Tensura_Pain_Nullification</hediffDef><severity>1</severity></li>
+				</hediffAdd>
+			</ItsSorceryFramework.LearningTreeNodeDef>
+			
+			
+			<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+				<learningTrackerDef>Tensura_Nullifications_LearningTrackerTree</learningTrackerDef>
+				<defName>Tensura_Node_StaggerNullification</defName>
+				<label>Stagger Nullification</label>
+				<description>You can nullify stagger.</description>
+				
+				<coordX>0</coordX>
+				<coordY>4</coordY>
+				<pointReq>10</pointReq>
+
+				<prereqNodes>
+					<li>Isekai_Resistances_Node_StaggerResistance5</li>
+				</prereqNodes>
+				<prereqNodeMode>All</prereqNodeMode>
+				
+				<hediffRemove>
+					<li>Isekai_Stagger_Resistance</li>
+				</hediffRemove>
+				<hediffAdd>
+					<li><hediffDef>Tensura_Stagger_Nullification</hediffDef><severity>1</severity></li>
+				</hediffAdd>
+			</ItsSorceryFramework.LearningTreeNodeDef>
+			
+			
+			<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+				<learningTrackerDef>Tensura_Nullifications_LearningTrackerTree</learningTrackerDef>
+				<defName>Tensura_Node_MentalBreakNullification</defName>
+				<label>Mental Break Nullification</label>
+				<description>You can nullify mental breaks.</description>
+				
+				<coordX>0</coordX>
+				<coordY>5</coordY>
+				<pointReq>10</pointReq>
+				
+				<hediffAdd>
+					<li><hediffDef>Tensura_MentalBreak_Nullification</hediffDef><severity>1</severity></li>
+				</hediffAdd>
+			</ItsSorceryFramework.LearningTreeNodeDef>
+
+
+
+
+
+
+</Defs>

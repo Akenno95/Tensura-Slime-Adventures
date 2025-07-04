@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Tensura Setup -->
+		
+			<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
+				<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
+				<defName>Tensura_Ability_LearningTrackerTree</defName>
+				<label>Slime Abilities</label>
+			</ItsSorceryFramework.LearningTrackerDef>
+
+		
+	<!-- Tensura Skilltree -->		
+		
+			<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+				<learningTrackerDef>Tensura_Ability_LearningTrackerTree</learningTrackerDef>
+				<defName>Tensura_Node_Slash</defName>
+				<label>Slash Ability</label>
+				<description>You can slash the enemy with this ability.</description>
+				
+				<coordX>0</coordX>
+				<coordY>0</coordY>
+				<pointReq>1</pointReq>
+
+				<prereqNodes>
+					<!--li>Isekai_Node_SlashAbility</li-->
+				</prereqNodes>
+				<prereqNodeMode>All</prereqNodeMode>
+				
+				<statOffsets>
+					<ArmorRating_Heat>10.0</ArmorRating_Heat>
+				</statOffsets>
+				<abilityGain>
+					<li>Isekai_Ability_WindSlash</li>
+				</abilityGain>
+			</ItsSorceryFramework.LearningTreeNodeDef>
+
+
+
+			<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+				<learningTrackerDef>Tensura_Ability_LearningTrackerTree</learningTrackerDef>
+				<defName>Tensura_Node_GluttonyPassive</defName>
+				<label>Gluttony passive</label>
+				<description>Gluttony devouring projectiles.</description>
+				
+				<coordX>0</coordX>
+				<coordY>1</coordY>
+				<pointReq>1</pointReq>
+
+				<prereqNodes>
+					<!--li>Isekai_Node_SlashAbility</li-->
+				</prereqNodes>
+				<prereqNodeMode>All</prereqNodeMode>
+				
+				<statOffsets>
+					<ArmorRating_Heat>10.0</ArmorRating_Heat>
+				</statOffsets>
+				<abilityGain>
+					<li>Tensura_Ability_Predator</li>
+					<li>Tensura_Ability_Release</li>
+					<li>Tensura_Ability_PredatorHeal</li>
+					<li>Tensura_Ability_Gluttony</li>
+					<li>Tensura_Ability_GluttonyHeal</li>
+					<li>Tensura_Ability_Beelzebub</li>
+					<li>Tensura_Ability_BeelzebubHeal</li>
+				</abilityGain>
+			</ItsSorceryFramework.LearningTreeNodeDef>
+
+
+		<!-- XenoChange -->
+
+			<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+				<learningTrackerDef>Tensura_Ability_LearningTrackerTree</learningTrackerDef>
+				<defName>Tensura_Node_XenoChange_Human</defName>
+				<label>Human change</label>
+				<description>Changing into a human visually.</description>
+				
+				<coordX>0</coordX>
+				<coordY>2</coordY>
+				<pointReq>1</pointReq>
+
+				<prereqNodes>
+					<!--li>Isekai_Node_SlashAbility</li-->
+				</prereqNodes>
+				<prereqNodeMode>All</prereqNodeMode>
+
+				<statOffsets>
+					<ArmorRating_Heat>10.0</ArmorRating_Heat>
+				</statOffsets>
+				<abilityGain>
+					<li>Tensura_Ability_XenoChange_Human</li>
+				</abilityGain>
+			</ItsSorceryFramework.LearningTreeNodeDef>
+
+			<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+				<learningTrackerDef>Tensura_Ability_LearningTrackerTree</learningTrackerDef>
+				<defName>Tensura_Node_XenoChange_Slime</defName>
+				<label>Slime change</label>
+				<description>Changing into a slime visually.</description>
+				
+				<coordX>0</coordX>
+				<coordY>3</coordY>
+				<pointReq>1</pointReq>
+
+				<prereqNodes>
+					<!--li>Isekai_Node_SlashAbility</li-->
+				</prereqNodes>
+				<prereqNodeMode>All</prereqNodeMode>
+				
+				<statOffsets>
+					<ArmorRating_Heat>10.0</ArmorRating_Heat>
+				</statOffsets>
+				<abilityGain>
+					<li>Tensura_Ability_XenoChange_Slime</li>
+				</abilityGain>
+			</ItsSorceryFramework.LearningTreeNodeDef>
+
+
+
+
+</Defs>
